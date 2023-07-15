@@ -4,10 +4,18 @@ body {
 }
 
 #container {
-    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+#mural {
     width: 100%;
-    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    box-sizing: border-box;
 }
+  
 
 .area {
     border: 1px dashed black;
@@ -15,24 +23,38 @@ body {
     width: 80%;
     position: absolute;
 }
-
-.circle {
-    height: 200px;
-    width: 200px;
-    background-color: navajowhite;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
+  
+.character-face {
+    z-index: 2;
 }
 
-.rectangle {
-    background-color: navajowhite;
-    height: 150px;
-    width: 250px;
-    position: relative;
-}
+#floating-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+  }
 
-.text-area {
-    float: right;
-    position: relative;
+.highlight {
+    position: absolute;
+    outline: none;
+    box-shadow: 0 0 0 4px red;
+    z-index: 1;
+}  
+  
+.highlight-box {
+    position: absolute;
+    border: 2px solid white;
+    pointer-events: none; /* Prevent the highlight box from capturing mouse events */
+}
+  
+.floating-window {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
 }

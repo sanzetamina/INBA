@@ -1,26 +1,34 @@
 {
-  "name": "zoom-pan",
+  "name": "inba",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
     "browserify": "^17.0.0",
-    "http-server": "^0.11.1",
+    "http-server": "^14.1.1",
     "uglify-es": "^3.3.9"
   },
   "devDependencies": {
-    "mocha": "^6.2.1"
+    "concurrently": "^8.2.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "watchify": "^4.0.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
     "test": "mocha __tests__/renderer.spec.js",
-    "build": "browserify index.js | uglifyjs -c > ./public/bundle.min.js && browserify ./src/renderer.js | uglifyjs -c > ./src/renderer.min.js",
+    "build": "browserify index.js | uglifyjs -c > ./public/bundle.min.js && browserify ./src/renderer.js | uglifyjs -c > ./src/renderer.min.js && echo \"build complete\"",
+    "start": "nodemon --watch public --exec \"http-server public\"",
+    "dev": "concurrently \"npm run build\" \"npm run start\"",
     "server": "http-server ./public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kwdowik/zoom-pan.git"
   },
-  "author": "Kacper Wdowik",
+  "author": "sanzetamina",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kwdowik/zoom-pan/issues"
