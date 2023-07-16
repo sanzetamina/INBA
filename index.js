@@ -3,12 +3,12 @@
   const characters = require("./data/characters.js"); // array of characters and their characteristics
 
   const container = document.getElementById("container");
-  const muralImage = container.children[0];
+  // const muralImage = container.children[0];
 
   const instance = renderer({
     minScale: 0.1,
     maxScale: 30,
-    element: muralImage,
+    element: container,
     scaleSensitivity: 50,
   });
 
@@ -36,8 +36,6 @@
     startX = event.clientX;
     startY = event.clientY;
     instance.panBy({ originX: moveX, originY: moveY });
-
-    updateHighlightBoxes(); // Update highlight boxes during pan
   });
 
   window.addEventListener("mouseup", () => {
@@ -51,17 +49,15 @@
       x: event.pageX,
       y: event.pageY,
     });
-
-    updateHighlightBoxes(); // Update highlight boxes during zoom
   });
 
   container.addEventListener("dblclick", () => {
     instance.panTo({ originX: 0, originY: 0, scale: 1 });
   });
 
-  muralImage.addEventListener("mousemove", handleMouseMove);
-  muralImage.addEventListener("click", handleClick);
-  muralImage.addEventListener("mouseleave", handleMouseLeave);
+  container.addEventListener("mousemove", handleMouseMove);
+  container.addEventListener("click", handleClick);
+  container.addEventListener("mouseleave", handleMouseLeave);
 
   function handleMouseMove(event) {
     const mouseX = event.clientX - container.getBoundingClientRect().left;
@@ -102,8 +98,8 @@
   }
 
   function handleClick(event) {
-    const mouseX = event.clientX - muralImage.getBoundingClientRect().left;
-    const mouseY = event.clientY - muralImage.getBoundingClientRect().top;
+    const mouseX = event.clientX - container.getBoundingClientRect().left;
+    const mouseY = event.clientY - container.getBoundingClientRect().top;
 
     const clickedCharacter = characters.find(
       (character) =>
@@ -146,36 +142,5 @@
     if (floatingWindow) {
       floatingWindow.remove();
     }
-  }
-
-  function updateHighlightBoxes() {
-    const { x, y, scale } = instance;
-
-    console.log(
-      "updateHighlightBoxes by: x=",
-      x,
-      " y=",
-      y,
-      " and scale= ",
-      scale
-    );
-
-    characters.forEach((character) => {
-      const { x: characterX, y: characterY, width, height, box } = character;
-      const transformedX = (characterX + x) * scale;
-      const transformedY = (characterY + y) * scale;
-      const transformedWidth = width * scale;
-      const transformedHeight = height * scale;
-
-      if (box) {
-        // Use CSS transform to apply translation and scaling
-        box.style.transform = `translate(${transformedX}px, ${transformedY}px) scale(${scale})`;
-        // Set the transform origin to the top left corner
-        box.style.transformOrigin = "0 0";
-        // Set the width and height of the box without scaling
-        box.style.width = `${transformedWidth}px`;
-        box.style.height = `${transformedHeight}px`;
-      }
-    });
   }
 })();
