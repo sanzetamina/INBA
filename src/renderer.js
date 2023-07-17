@@ -20,7 +20,7 @@ const getScale = ({
 }) => {
   let newScale = scale + deltaScale / (scaleSensitivity / scale);
   newScale = Math.max(minScale, Math.min(newScale, maxScale));
-  return [scale, newScale];
+  return newScale;
 };
 
 const getMatrix = ({ scale, translateX, translateY }) =>
@@ -52,8 +52,9 @@ const makeZoom = (state) => ({
   zoom: ({ x, y, deltaScale }) => {
     const { left, top } = state.element.getBoundingClientRect();
     const { minScale, maxScale, scaleSensitivity } = state;
-    const [scale, newScale] = getScale({
-      scale: state.transformation.scale,
+    const scale = state.transformation.scale;
+    const newScale = getScale({
+      scale,
       deltaScale,
       minScale,
       maxScale,
@@ -105,7 +106,9 @@ const renderer = ({ minScale, maxScale, element, scaleSensitivity = 10 }) => {
       scale: 1,
     },
   };
-  return Object.assign({}, makeZoom(state), makePan(state));
+  return Object.assign({}, makeZoom(state), makePan(state), {
+    getScale: () => state.transformation.scale,
+  });
 };
 
 module.exports = { renderer };

@@ -5,6 +5,10 @@
   const container = document.getElementById("container");
   // const muralImage = container.children[0];
 
+  // Get the pixel width and height of the container
+  const containerWidth = container.clientWidth;
+  const containerHeight = container.clientHeight;
+
   const instance = renderer({
     minScale: 0.1,
     maxScale: 30,
@@ -60,10 +64,20 @@
   container.addEventListener("mouseleave", handleMouseLeave);
 
   function handleMouseMove(event) {
-    const mouseX = event.clientX - container.getBoundingClientRect().left;
-    const mouseY = event.clientY - container.getBoundingClientRect().top;
+    const mouseX =
+      ((event.clientX - container.getBoundingClientRect().left) * 100) /
+      (containerWidth * instance.getScale());
+    const mouseY =
+      ((event.clientY - container.getBoundingClientRect().top) * 100) /
+      (containerHeight * instance.getScale());
 
-    console.log("Mouse move at: ", mouseX, " - ", mouseY);
+    console.log(
+      "Mouse move at: x=",
+      mouseX.toFixed(2),
+      "% & y=",
+      mouseY.toFixed(2),
+      "%"
+    );
 
     characters.forEach((character) => {
       const isHovered =
@@ -87,10 +101,10 @@
 
       if (isHovered) {
         highlightElement.style.display = "block";
-        highlightElement.style.top = `${character.y}px`;
-        highlightElement.style.left = `${character.x}px`;
-        highlightElement.style.width = `${character.width}px`;
-        highlightElement.style.height = `${character.height}px`;
+        highlightElement.style.top = `${character.y}%`;
+        highlightElement.style.left = `${character.x}%`;
+        highlightElement.style.width = `${character.width}%`;
+        highlightElement.style.height = `${character.height}%`;
       } else {
         highlightElement.style.display = "none";
       }
@@ -98,8 +112,12 @@
   }
 
   function handleClick(event) {
-    const mouseX = event.clientX - container.getBoundingClientRect().left;
-    const mouseY = event.clientY - container.getBoundingClientRect().top;
+    const mouseX =
+      ((event.clientX - container.getBoundingClientRect().left) * 100) /
+      (containerWidth * instance.getScale());
+    const mouseY =
+      ((event.clientY - container.getBoundingClientRect().top) * 100) /
+      (containerHeight * instance.getScale());
 
     const clickedCharacter = characters.find(
       (character) =>
