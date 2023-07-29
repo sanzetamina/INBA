@@ -1,11 +1,8 @@
 (() => {
   const { renderer } = require("./src/renderer");
-  const characters = require("./data/characters.js"); // array of characters and their characteristics
+  const characters = require("./data/characters.js");
 
   const container = document.getElementById("container");
-  // const muralImage = container.children[0];
-
-  // Get the pixel width and height of the container
   const containerWidth = container.clientWidth;
   const containerHeight = container.clientHeight;
 
@@ -20,9 +17,34 @@
   let startX;
   let startY;
 
+  function calculateMousePosition(event) {
+    const rect = container.getBoundingClientRect();
+    const scale = instance.getScale();
+
+    let mouseX, mouseY;
+
+    mouseX = ((event.clientX - rect.left) * 100) / (containerWidth * scale);
+    mouseY = ((event.clientY - rect.top) * 100) / (containerHeight * scale);
+
+    return { mouseX, mouseY };
+  }
+
+  function createHighlightElement(character) {
+    let highlightElement = document.getElementById(
+      `highlight-${character.name}`
+    );
+    if (!highlightElement) {
+      highlightElement = document.createElement("div");
+      highlightElement.id = `highlight-${character.name}`;
+      highlightElement.className = "highlight";
+      container.appendChild(highlightElement);
+    }
+    return highlightElement;
+  }
+
   container.addEventListener("mousedown", (event) => {
     if (event.button !== 0) {
-      return; // Exit if the mouse button is not the primary (left) button
+      return;
     }
     event.preventDefault();
     isDragging = true;
@@ -64,12 +86,7 @@
   container.addEventListener("mouseleave", handleMouseLeave);
 
   function handleMouseMove(event) {
-    const mouseX =
-      ((event.clientX - container.getBoundingClientRect().left) * 100) /
-      (containerWidth * instance.getScale());
-    const mouseY =
-      ((event.clientY - container.getBoundingClientRect().top) * 100) /
-      (containerHeight * instance.getScale());
+    const { mouseX, mouseY } = calculateMousePosition(event);
 
     console.log(
       "Mouse move at: x=",
@@ -85,19 +102,7 @@
         mouseX <= character.x + character.width &&
         mouseY >= character.y &&
         mouseY <= character.y + character.height;
-
-      let highlightElement = document.getElementById(
-        `highlight-${character.name}`
-      );
-
-      character.box = highlightElement;
-
-      if (!highlightElement) {
-        highlightElement = document.createElement("div");
-        highlightElement.id = `highlight-${character.name}`;
-        highlightElement.className = "highlight";
-        container.appendChild(highlightElement);
-      }
+      const highlightElement = createHighlightElement(character);
 
       if (isHovered) {
         highlightElement.style.display = "block";
@@ -112,12 +117,19 @@
   }
 
   function handleClick(event) {
-    const mouseX =
-      ((event.clientX - container.getBoundingClientRect().left) * 100) /
-      (containerWidth * instance.getScale());
-    const mouseY =
-      ((event.clientY - container.getBoundingClientRect().top) * 100) /
-      (containerHeight * instance.getScale());
+    const { mouseX, mouseY } = calculateMousePosition(event);
+    const scale = instance.getScale();
+    const pan = instance.getPan();
+
+    console.log(
+      "Mouse CLICK at: x=",
+      mouseX.toFixed(2),
+      "% & y=",
+      mouseY.toFixed(2),
+      "%"
+    );
+    console.log("Scale: ", scale);
+    console.log("Pan: ", pan);
 
     const clickedCharacter = characters.find(
       (character) =>
@@ -130,18 +142,26 @@
     if (clickedCharacter) {
       console.log("Character clicked!");
       showFloatingWindow(clickedCharacter, event.clientX, event.clientY);
+    } else {
+      console.log("No character clicked!");
     }
   }
 
   function showFloatingWindow(character, mouseX, mouseY) {
+    const currentScale = instance.getScale();
+    const pan = instance.getPan();
+
+    const adjustedMouseX = mouseX - pan.x / currentScale;
+    const adjustedMouseY = mouseY - pan.y / currentScale;
+
     const floatingWindow = document.createElement("div");
     floatingWindow.className = "floating-window";
-    floatingWindow.style.left = `${mouseX}px`;
-    floatingWindow.style.top = `${mouseY}px`;
+    floatingWindow.style.left = `${adjustedMouseX}px`;
+    floatingWindow.style.top = `${adjustedMouseY}px`;
 
     const content = `
-      <h3>${character.name}</h3>
-      <p>${character.description}</p>
+    <h3>${character.name}</h3>
+    <p>${character.description}</p>
     `;
     floatingWindow.innerHTML = content;
 
@@ -150,9 +170,11 @@
 
   function handleMouseLeave() {
     characters.forEach((character) => {
-      const characterElement = document.getElementById(character.name);
-      if (characterElement) {
-        characterElement.classList.remove("highlight");
+      const highlightElement = document.getElementById(
+        `highlight-${character.name}`
+      );
+      if (highlightElement) {
+        highlightElement.style.display = "none";
       }
     });
 
