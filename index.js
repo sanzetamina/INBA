@@ -149,10 +149,9 @@
 
   function showFloatingWindow(character, mouseX, mouseY) {
     const currentScale = instance.getScale();
-    const pan = instance.getPan();
 
-    const adjustedMouseX = mouseX - pan.x / currentScale;
-    const adjustedMouseY = mouseY - pan.y / currentScale;
+    const adjustedMouseX = mouseX / currentScale;
+    const adjustedMouseY = mouseY / currentScale;
 
     const floatingWindow = document.createElement("div");
     floatingWindow.className = "floating-window";
@@ -160,8 +159,8 @@
     floatingWindow.style.top = `${adjustedMouseY}px`;
 
     const content = `
-    <h3>${character.name}</h3>
-    <p>${character.description}</p>
+      <h3>${character.name}</h3>
+      <p>${character.description}</p>
     `;
     floatingWindow.innerHTML = content;
 
