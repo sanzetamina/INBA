@@ -3,8 +3,8 @@
   const characters = require("./data/characters.js");
 
   const container = document.getElementById("container");
-  const containerWidth = container.clientWidth;
-  const containerHeight = container.clientHeight;
+  let containerWidth = container.clientWidth;
+  let containerHeight = container.clientHeight;
 
   const instance = renderer({
     minScale: 0.1,
@@ -41,6 +41,63 @@
     }
     return highlightElement;
   }
+
+  function positionHighlightBoxes(mousePosition) {
+    characters.forEach((character) => {
+      const isHovered =
+        mousePosition.mouseX >= character.x &&
+        mousePosition.mouseX <= character.x + character.width &&
+        mousePosition.mouseY >= character.y &&
+        mousePosition.mouseY <= character.y + character.height;
+      const highlightElement = createHighlightElement(character);
+
+      if (isHovered) {
+        highlightElement.style.display = "block";
+        highlightElement.style.top = `${character.y}%`;
+        highlightElement.style.left = `${character.x}%`;
+        highlightElement.style.width = `${character.width}%`;
+        highlightElement.style.height = `${character.height}%`;
+      } else {
+        highlightElement.style.display = "none";
+      }
+    });
+  }
+
+  function handleMouseMove(event) {
+    const { mouseX, mouseY } = calculateMousePosition(event);
+
+    console.log(
+      "Mouse move at: x=",
+      mouseX.toFixed(2),
+      "% & y=",
+      mouseY.toFixed(2),
+      "%"
+    );
+
+    const currentMousePosition = { mouseX, mouseY };
+    positionHighlightBoxes(currentMousePosition);
+  }
+
+  function handleResize() {
+    // Update container width and height after resizing
+    containerWidth = container.clientWidth;
+    containerHeight = container.clientHeight;
+
+    // Re-calculate the mouse position and reposition highlight boxes
+    const currentMousePosition = { mouseX: 0, mouseY: 0 };
+    if (characters.length > 0) {
+      const character = characters[0];
+      const highlightElement = createHighlightElement(character);
+      currentMousePosition.mouseX = parseFloat(highlightElement.style.left);
+      currentMousePosition.mouseY = parseFloat(highlightElement.style.top);
+    }
+    positionHighlightBoxes(currentMousePosition);
+  }
+
+  // Add this line to call positionHighlightBoxes initially
+  positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
+
+  window.addEventListener("resize", handleResize);
 
   container.addEventListener("mousedown", (event) => {
     if (event.button !== 0) {
@@ -84,37 +141,6 @@
   container.addEventListener("mousemove", handleMouseMove);
   container.addEventListener("click", handleClick);
   container.addEventListener("mouseleave", handleMouseLeave);
-
-  function handleMouseMove(event) {
-    const { mouseX, mouseY } = calculateMousePosition(event);
-
-    console.log(
-      "Mouse move at: x=",
-      mouseX.toFixed(2),
-      "% & y=",
-      mouseY.toFixed(2),
-      "%"
-    );
-
-    characters.forEach((character) => {
-      const isHovered =
-        mouseX >= character.x &&
-        mouseX <= character.x + character.width &&
-        mouseY >= character.y &&
-        mouseY <= character.y + character.height;
-      const highlightElement = createHighlightElement(character);
-
-      if (isHovered) {
-        highlightElement.style.display = "block";
-        highlightElement.style.top = `${character.y}%`;
-        highlightElement.style.left = `${character.x}%`;
-        highlightElement.style.width = `${character.width}%`;
-        highlightElement.style.height = `${character.height}%`;
-      } else {
-        highlightElement.style.display = "none";
-      }
-    });
-  }
 
   function handleClick(event) {
     const { mouseX, mouseY } = calculateMousePosition(event);
