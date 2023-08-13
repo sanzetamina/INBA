@@ -31,11 +31,11 @@
 
   function createHighlightElement(character) {
     let highlightElement = document.getElementById(
-      `highlight-${character.name}`
+      `highlight-${character.name.english}`
     );
     if (!highlightElement) {
       highlightElement = document.createElement("div");
-      highlightElement.id = `highlight-${character.name}`;
+      highlightElement.id = `highlight-${character.name.english}`;
       highlightElement.className = "highlight";
       container.appendChild(highlightElement);
     }
@@ -185,8 +185,8 @@
     floatingWindow.style.top = `${adjustedMouseY}px`;
 
     const content = `
-      <h3>${character.name}</h3>
-      <p>${character.description}</p>
+      <h3>${character.name.english}</h3>
+      <p>${character.description.english}</p>
     `;
     floatingWindow.innerHTML = content;
 
@@ -196,7 +196,7 @@
   function handleMouseLeave() {
     characters.forEach((character) => {
       const highlightElement = document.getElementById(
-        `highlight-${character.name}`
+        `highlight-${character.name.english}`
       );
       if (highlightElement) {
         highlightElement.style.display = "none";
