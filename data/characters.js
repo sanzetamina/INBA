@@ -7,9 +7,9 @@ const characters = [
     },
     description: {
       spanish:
-        "historiador y director de la Biblioteca Nacional, soñando con el pasado y evocando la historia de la Alameda.",
+        "Historiador y director de la Biblioteca Nacional, soñando con el pasado y evocando la historia de la Alameda.",
       english:
-        "historian, former Director of the National Library, serves as our symbolic guide through the history of the Alameda park, depicted in this mural",
+        "Historian, former Director of the National Library, serves as our symbolic guide through the history of the Alameda park, depicted in this mural.",
     },
     x: 2.73, // x-coordinate of the face position in the mural image
     y: 57.38, // y-coordinate of the face position in the mural image
@@ -25,8 +25,8 @@ const characters = [
     },
     description: {
       spanish:
-        "gobernador de la ciudad de México, en parte del régimen de Porfirio Diaz.",
-      english: "governor of Mexico City during part of Porfirio Diaz's regime.",
+        "Gobernador de la ciudad de México, en parte del régimen de Porfirio Diaz.",
+      english: "Governor of Mexico City during part of Porfirio Diaz's regime.",
     },
     x: 5.57,
     y: 55.54,
@@ -42,9 +42,9 @@ const characters = [
     },
     description: {
       spanish:
-        "lagunero acaudalado, amigo y protector de aristas, en especial de Julio Ruelas.",
+        "Lagunero acaudalado, amigo y protector de aristas, en especial de Julio Ruelas.",
       english:
-        "a wealthy Porfirian landowner, patron of the arts, specially of the Mexican nineteenth century painter Julio Ruelas.",
+        "A wealthy Porfirian landowner, patron of the arts, especially of the Mexican nineteenth-century painter Julio Ruelas.",
     },
     x: 7.38,
     y: 57.56,
@@ -59,8 +59,8 @@ const characters = [
       english: "Hernán Cortés",
     },
     description: {
-      spanish: "conquistador del territorio mexicano, de origen español.",
-      english: "Spanish conqueror of the Mexican teritory.",
+      spanish: "Conquistador español del territorio mexicano",
+      english: "Spanish conqueror of the Mexican territory.",
     },
     x: 0.47,
     y: 43.17,
@@ -76,7 +76,7 @@ const characters = [
     },
     description: {
       spanish:
-        "octavo Virrey de la Nueva España. En 1592 fundó el Paseo de la Alameda.",
+        "Octavo Virrey de la Nueva España. En 1592 fundó el Paseo de la Alameda.",
       english: "8th Viceroy of Mexico, who in 1592 founded the Alameda park.",
     },
     x: 3.9,
@@ -93,9 +93,9 @@ const characters = [
     },
     description: {
       spanish:
-        "primer obispo y primer arzobispo de la Nueva España. En 1539 mandó quemar vivo por idolatría a un nieto de Nezahualcóyotl, quien se convirtió así en la primera víctima de la Inquisición en la Nueva España.",
+        "Primer obispo y primer arzobispo de la Nueva España. En 1539 mandó quemar vivo por idolatría a un nieto de Nezahualcóyotl, quien se convirtió así en la primera víctima de la Inquisición en la Nueva España.",
       english:
-        "first Catholic archbishop of Mexico, who established the Catholic inquisition in Mexico and ordered in 1509 the first burning of a so-called heretic, who was grandson of Nezahualcoyot.",
+        "First Catholic archbishop of Mexico, who established the Catholic inquisition in Mexico and ordered in 1509 the first burning of a so-called heretic, who was the grandson of Nezahualcoyotl.",
     },
     x: 2.82,
     y: 41.63,
@@ -113,7 +113,7 @@ const characters = [
       spanish:
         "Fue instalado en los terrenos pertenecientes al Convento de los Dieguinos (siglo XVI), que luego se convirtieron en la parte de la Alameda Central.",
       english:
-        "belonged to the Convent of Saint Diego, and is now part of the Alameda.",
+        "Belonged to the Convent of Saint Diego, and is now part of the Alameda.",
     },
     x: 4.23,
     y: 14.34,
@@ -131,7 +131,7 @@ const characters = [
       spanish:
         "hermosa judía perteneciente a la famosa familia que fue juzgada y condenada a la hoguera por la Inquisición, bajo la acusación de herejía.",
       english:
-        "a jew, was burned at the stake having been unjustly accused of heresy. A historical issue in Mexican colonial times.",
+        "A Jew, she was burned at the stake having been unjustly accused of heresy. A historical issue in Mexican colonial times.",
     },
     x: 4.31,
     y: 26.82,
@@ -149,7 +149,7 @@ const characters = [
       spanish:
         "de una sola torre, cuya construcción se concluyó en 1621, modificándose su fachada a principios del siglo XIX.",
       english:
-        "with only one tower, its construction was finished In 1621. Its front was modified in the first halt of the 19th Century.",
+        "With only one tower, its construction was finished In 1621. Its front was modified in the first half of the 19th Century.",
     },
     x: 9.08,
     y: 18.64,
@@ -160,14 +160,14 @@ const characters = [
   {
     id: 10,
     name: {
-      spanish: "Sor Juana Inés de la Cruz",
+      spanish: "Sor Juana Inés de la Cruz (1651-1695)",
       english: "Sor Juana Inés de la Cruz (1651-1695)",
     },
     description: {
       spanish:
         "la más notable poetisa de la Nueva España durante la Colonia, que mereció el nombre de la Décima Musa. Declaró el derecho de la mujer a la cultura y a disentir, por lo que resulta una de las precursoras de la lucha por los derechos femeninos.",
       english:
-        "the most famous woman poet of New Spain. She has been called the Tenth Muse. In a sense, she was a forerunner in the struggle for equality of women. In her exquisite poetry -a living classic in Mexican Ilterature- she defended women's right to education and culture, and to freely express their most Innermost feelings; a stand unheard and unacceptable at that time.",
+        "The most famous woman poet of New Spain. She has been called the Tenth Muse. In a sense, she was a forerunner in the struggle for the equality of women.",
     },
     x: 9.48,
     y: 39.16,
@@ -184,7 +184,7 @@ const characters = [
     description: {
       spanish:
         "soñando con la comida que comprará con el producto de su hurto.",
-      english: "already dreaming of the food he will buy with his loot.",
+      english: "Dreaming of the food he will buy with his loot.",
     },
     x: 11,
     y: 68.43,
@@ -202,7 +202,7 @@ const characters = [
       spanish:
         "de atuendo otrora elegante, que sueña en su idilio al son de un vals, recordando a su Alteza Serenísima don Antonio López de Santa Anna.",
       english:
-        "reliving his past fimes when he paricipated in the glories of Mexico during the govemment ol the General Antonio López de Santa Anna.",
+        "Reliving his past times when he participated in the glories of Mexico during the government of the General Antonio López de Santa Anna.",
     },
     x: 9.72,
     y: 69.03,
@@ -220,7 +220,7 @@ const characters = [
       spanish:
         "general y político que ocupó once veces la presidencia de México, entre 1833 y 1855. Como resultado de la oposición a que Santa Anna cediera Texas a Estados Unidos en 1847, México, en 1848, perdió el 51% de su territorio a causa de la invasión Norteamericana.",
       english:
-        "a general and poitician, who was President df Mexico eleven fimes between 1830 and 1855. As a resut of the Mexican oppostion in 1847, when Sarta Anna ceded Texas to the United Slates, Mexico lost the 51% of is territory in 1848, because di the American invasion.",
+        "a general and poitician, who was President of Mexico eleven times between 1830 and 1855. As a resut of the Mexican oppostion in 1847, when Santa Anna ceded Texas to the United Slates, Mexico lost 51% of its territory in 1848, because of the American invasion.",
     },
     x: 11.9,
     y: 47.16,
@@ -256,7 +256,7 @@ const characters = [
       spanish:
         "militar realista que ayudó a consumar la independencia y comandó al Ejército Trigarante en su entrada a la capital de México en 1821. Durante diez meses fue emperador de México, de 1822 a 1823.",
       english:
-        "Initially a Spanish loyalist. He joined his troops to those of Vicente Guerrero, then leader of the insurrection, and both consummated the Independence of Mexico. Through treacheries, politicking and assassination, he founded the so-called First Empire that lasted only ten months, between 1822 and 1823.",
+        "Initially a Spanish loyalist. He joined his troops to those of Vicente Guerrero, then leader of the insurrection, and both consummated the Independence of Mexico, from 1822 to 1823.",
     },
     x: 11.31,
     y: 39.79,
@@ -274,7 +274,7 @@ const characters = [
       spanish:
         "Proyecto del ingeniero y arquitecto José Ramón de Ibarrola. Estuvo en la Alameda Central y más tarde fue trasladado a la Alameda de Santa María la Ribera para ceder su lugar al Hemiciclo a Juárez.",
       english:
-        "Designed by the architect José Ramón de /barrola. It was installed at the Central Alameda and years later was moved to the Alameda of Santa Maria la Ribera.",
+        "Designed by the architect José Ramón de Ibarrola. It was installed at the Central Alameda and years later was moved to the Alameda of Santa Maria la Ribera.",
     },
     x: 12.45,
     y: 22.03,
@@ -292,7 +292,7 @@ const characters = [
       spanish:
         "soñando con el amor que tuvo con uno de los invasores norteamericanos, de quien procreó un hijo rubio.",
       english:
-        "dreaming of her affair with an American invader with whom she had a blond son.",
+        "Dreaming of her affair with an American invader with whom she had a blond son.",
     },
     x: 13.42,
     y: 70.84,
@@ -309,7 +309,7 @@ const characters = [
     description: {
       spanish: "soñando en sus glorias cuando era chinaco liberal.",
       english:
-        "dreaming about his glories when he fought on the liberal side in the 1860's.",
+        "Dreaming about his glories when he fought on the liberal side in the 1860's.",
     },
     x: 17.5,
     y: 64.92,
@@ -325,9 +325,9 @@ const characters = [
     },
     description: {
       spanish:
-        "héroe nacional y Presidente de México (1857 - 1872) durante la Guerra de Tres Años (1858-1860) y la intervención Francesa (1863 - 1887). Mereció la distinción de Benemérito de las Américas.",
+        "Héroe nacional y Presidente de México (1857 - 1872) durante la Guerra de Tres Años (1858-1860) y la intervención Francesa (1863 - 1887). Mereció la distinción de Benemérito de las Américas.",
       english:
-        "Isader of Mexico ls liberals who upheld the rule of civil and democratic law, as opposed to Catholic ecclesiastical and economic prifiges:. As President of Mexico (1857-1872) he fought successfully against the Catholic Church, the French invasion and Maximilian from 1563 to 1867. He was named the Giorous man of the American Continent.",
+        "Leader of Mexico's liberals who upheld the rule of civil and democratic law.",
     },
     x: 16.08,
     y: 29.23,

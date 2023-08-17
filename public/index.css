@@ -1,54 +1,148 @@
 body {
-    overflow: hidden;
-    background-color: black;
+  overflow: hidden;
+  background-color: black;
 }
 
 #container {
-    position: relative;
-    box-sizing: border-box;
-  }
-  
-#mural {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    z-index: 1;
-    box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
 }
-  
+
+#mural {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  box-sizing: border-box;
+}
 
 .area {
-    border: 1px dashed black;
-    height: 80%;
-    width: 80%;
-    position: absolute;
+  border: 1px dashed black;
+  height: 80%;
+  width: 80%;
+  position: absolute;
 }
-  
+
 .character-face {
-    z-index: 2;
+  z-index: 2;
 }
 
 #floating-window {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px; /* Adjust the width as needed */
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px;
-    display: none;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust the width as needed */
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+}
 
 .highlight {
-    position: absolute;
-    outline: none;
-    box-shadow: 0 0 0 2px white;
-    z-index: 1;
+  position: absolute;
+  outline: none;
+  box-shadow: 0 0 0 2px white;
+  z-index: 1;
 }
-  
+
 .floating-window {
-    position: absolute;
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light gray */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.floating-window:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-window h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.floating-window p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333; /* Dark gray */
+}
+
+/* Language Widget */
+
+.language-widget {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  opacity: 0.8;
+}
+
+.language-toggle:hover {
+  opacity: 0.85; /* Adjust the opacity value when hovering */
+}
+
+.language-label {
+  text-align: center;
+  font-size: 14px; /* Larger font */
+  font-family: 'Roboto', sans-serif;
+  color: #555; /* Adjust the color as needed */
+  margin: 5px; /* Add some spacing around the labels */
+  background-color: white; /* Background for readability */
+  padding: 5px 10px; /* Padding around labels */
+  border-radius: 5px;
+}
+
+.language-switch {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc; /* Default background color */
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.language-checkbox {
+  display: none;
+}
+
+.language-slider {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s;
+}
+
+.language-checkbox:checked + .language-slider {
+  transform: translateX(30px);
+}
+
+/* Set background images for English and Spanish */
+.language-switch.english {
+  background-image: url('https://www.kidlink.org/icons/f0-us.gif');
+}
+
+.language-switch.spanish {
+  background-image: url('https://www.kidlink.org/icons/f0-mx.gif');
 }

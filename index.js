@@ -1,8 +1,13 @@
 (() => {
+  let selectedLanguage = "english"; // Default to English
+
   const { renderer } = require("./src/renderer");
   const characters = require("./data/characters.js");
 
   const container = document.getElementById("container");
+  const languageSwitch = document.querySelector(".language-switch");
+  const languageCheckbox = document.querySelector(".language-checkbox");
+
   let containerWidth = container.clientWidth;
   let containerHeight = container.clientHeight;
 
@@ -167,30 +172,39 @@
 
     if (clickedCharacter) {
       console.log("Character clicked!");
-      showFloatingWindow(clickedCharacter, event.clientX, event.clientY);
+      showFloatingWindow(clickedCharacter);
     } else {
       console.log("No character clicked!");
     }
   }
 
-  function showFloatingWindow(character, mouseX, mouseY) {
-    const currentScale = instance.getScale();
+  let currentlyOpenWindow = null; // To keep track of the currently open floating window
 
-    const adjustedMouseX = mouseX / currentScale;
-    const adjustedMouseY = mouseY / currentScale;
+  function showFloatingWindow(character) {
+    // Close the currently open window if there is one
+    if (currentlyOpenWindow) {
+      currentlyOpenWindow.remove();
+    }
 
     const floatingWindow = document.createElement("div");
     floatingWindow.className = "floating-window";
-    floatingWindow.style.left = `${adjustedMouseX}px`;
-    floatingWindow.style.top = `${adjustedMouseY}px`;
+    floatingWindow.style.width = "50%"; // Fixed width up to half of the screen/container
+    floatingWindow.style.position = "fixed"; // Position fixed to stay at the top left corner
+
+    // Set the window's position at the top left corner
+    floatingWindow.style.left = "10px"; // Adjust as needed
+    floatingWindow.style.top = "10px"; // Adjust as needed
 
     const content = `
-      <h3>${character.name.english}</h3>
-      <p>${character.description.english}</p>
+      <h3>${character.name[selectedLanguage]}</h3>
+      <p>${character.description[selectedLanguage]}</p>
     `;
     floatingWindow.innerHTML = content;
 
     document.body.appendChild(floatingWindow);
+
+    // Update the currently open window
+    currentlyOpenWindow = floatingWindow;
   }
 
   function handleMouseLeave() {
@@ -208,4 +222,20 @@
       floatingWindow.remove();
     }
   }
+
+  languageSwitch.addEventListener("click", () => {
+    languageCheckbox.checked = !languageCheckbox.checked;
+    selectedLanguage = languageCheckbox.checked ? "spanish" : "english";
+    const characterId = currentlyOpenWindow.getAttribute("data-character-id");
+    const character = characters.find(
+      (char) => char.id === parseInt(characterId)
+    );
+
+    if (character) {
+      showFloatingWindow(character);
+    }
+  });
+
+  // Call showFloatingWindow with a default character initially
+  // showFloatingWindow(characters[0]);
 })();
