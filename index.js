@@ -166,8 +166,8 @@
     //   mouseY.toFixed(2),
     //   "%"
     // );
-    // console.log("Scale: ", scale);
-    // console.log("Pan: ", pan);
+    console.log("Scale: ", scale);
+    console.log("Pan: ", pan);
 
     const clickedCharacter = characters.find(
       (character) =>
