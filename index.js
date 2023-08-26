@@ -78,13 +78,13 @@
   function handleMouseMove(event) {
     const { mouseX, mouseY } = calculateMousePosition(event);
 
-    console.log(
-      "Mouse move at: x=",
-      mouseX.toFixed(2),
-      "% & y=",
-      mouseY.toFixed(2),
-      "%"
-    );
+    // console.log(
+    //   "Mouse move at: x=",
+    //   mouseX.toFixed(2),
+    //   "% & y=",
+    //   mouseY.toFixed(2),
+    //   "%"
+    // );
 
     const currentMousePosition = { mouseX, mouseY };
     positionHighlightBoxes(currentMousePosition);
@@ -159,15 +159,15 @@
     const scale = instance.getScale();
     const pan = instance.getPan();
 
-    console.log(
-      "Mouse CLICK at: x=",
-      mouseX.toFixed(2),
-      "% & y=",
-      mouseY.toFixed(2),
-      "%"
-    );
-    console.log("Scale: ", scale);
-    console.log("Pan: ", pan);
+    // console.log(
+    //   "Mouse CLICK at: x=",
+    //   mouseX.toFixed(2),
+    //   "% & y=",
+    //   mouseY.toFixed(2),
+    //   "%"
+    // );
+    // console.log("Scale: ", scale);
+    // console.log("Pan: ", pan);
 
     const clickedCharacter = characters.find(
       (character) =>
