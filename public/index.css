@@ -42,6 +42,15 @@ body {
   z-index: 2;
 }
 
+.highlight {
+  position: absolute;
+  outline: none;
+  box-shadow: 0 0 0 2px white;
+  z-index: 1;
+}
+
+/* Floating Window */
+
 #floating-window {
   position: absolute;
   top: 0;
@@ -51,13 +60,6 @@ body {
   border: 1px solid black;
   padding: 10px;
   display: none;
-}
-
-.highlight {
-  position: absolute;
-  outline: none;
-  box-shadow: 0 0 0 2px white;
-  z-index: 1;
 }
 
 .floating-window {
@@ -163,7 +165,7 @@ body {
 }
 
 /* Zoom Animation */
-.zoom-animation {
+/* .zoom-animation {
   animation: zoomInOut 3s ease 1;
 }
 
@@ -177,4 +179,4 @@ body {
   50% {
     transform: scale(0.9) translateX(-10px);
   }
-}
+} */
