@@ -10,17 +10,25 @@
     />
   </head>
   <body>
+    <div class="header">
+      <h1 class="header-title" id="header-title"></h1>
+    </div>
     <div class="language-widget">
-      <div class="language-label">English</div>
+      <div class="language-label">Español</div>
       <div class="language-switch">
         <input type="checkbox" class="language-checkbox" />
         <span class="language-slider"></span>
       </div>
-      <div class="language-label">Español</div>
+      <div class="language-label">English</div>
     </div>
 
     <div id="container">
-      <img id="mural" src="mural.jpg" alt="Diego Rivera Mural" />
+      <img
+        id="mural"
+        src="mural.jpg"
+        alt="Diego Rivera Mural"
+        class="zoom-animation"
+      />
       <div id="floating-window"></div>
     </div>
     <script src="./bundle.min.js"></script>

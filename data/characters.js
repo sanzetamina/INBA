@@ -9,7 +9,7 @@ const characters = [
       spanish:
         "Historiador y director de la Biblioteca Nacional, soñando con el pasado y evocando la historia de la Alameda.",
       english:
-        "Historian, former Director of the National Library, serves as our symbolic guide through the history of the Alameda park, depicted in this mural.",
+        "Historian and former Director of the National Library, he serves as our symbolic guide through the history of the Alameda park depicted in this mural.",
     },
     x: 2.73, // x-coordinate of the face position in the mural image
     y: 57.38, // y-coordinate of the face position in the mural image
@@ -25,7 +25,7 @@ const characters = [
     },
     description: {
       spanish:
-        "Gobernador de la ciudad de México, en parte del régimen de Porfirio Diaz.",
+        "Gobernador de la Ciudad de México durante parte del régimen de Porfirio Díaz.",
       english: "Governor of Mexico City during part of Porfirio Diaz's regime.",
     },
     x: 5.57,
@@ -42,9 +42,9 @@ const characters = [
     },
     description: {
       spanish:
-        "Lagunero acaudalado, amigo y protector de aristas, en especial de Julio Ruelas.",
+        "Acaudalado lagunero, amigo y protector de artistas, destacando su relación especial con Julio Ruelas.",
       english:
-        "A wealthy Porfirian landowner, patron of the arts, especially of the Mexican nineteenth-century painter Julio Ruelas.",
+        "A wealthy Porfirian landowner and patron of the arts, especially of the 19th-century Mexican painter, Julio Ruelas.",
     },
     x: 7.38,
     y: 57.56,
@@ -59,8 +59,9 @@ const characters = [
       english: "Hernán Cortés",
     },
     description: {
-      spanish: "Conquistador español del territorio mexicano",
-      english: "Spanish conqueror of the Mexican territory.",
+      spanish:
+        "Conquistador español que lideró la conquista del territorio mexicano.",
+      english: "The Spanish conqueror of Mexican territory.",
     },
     x: 0.47,
     y: 43.17,
@@ -77,7 +78,8 @@ const characters = [
     description: {
       spanish:
         "Octavo Virrey de la Nueva España. En 1592 fundó el Paseo de la Alameda.",
-      english: "8th Viceroy of Mexico, who in 1592 founded the Alameda park.",
+      english:
+        "The 8th Viceroy of Mexico, who founded the Alameda park in 1592.",
     },
     x: 3.9,
     y: 49.95,
@@ -93,9 +95,9 @@ const characters = [
     },
     description: {
       spanish:
-        "Primer obispo y primer arzobispo de la Nueva España. En 1539 mandó quemar vivo por idolatría a un nieto de Nezahualcóyotl, quien se convirtió así en la primera víctima de la Inquisición en la Nueva España.",
+        "Primer obispo y arzobispo de la Nueva España. En 1539, mandó quemar vivo a un nieto de Nezahualcóyotl acusado de idolatría, convirtiéndose este en la primera víctima de la Inquisición en la Nueva España.",
       english:
-        "First Catholic archbishop of Mexico, who established the Catholic inquisition in Mexico and ordered in 1509 the first burning of a so-called heretic, who was the grandson of Nezahualcoyotl.",
+        "The first Catholic archbishop of Mexico, he established the Catholic Inquisition in Mexico and ordered the first burning of a so-called heretic in 1539, a grandson of Nezahualcoyotl.",
     },
     x: 2.82,
     y: 41.63,
@@ -113,7 +115,7 @@ const characters = [
       spanish:
         "Fue instalado en los terrenos pertenecientes al Convento de los Dieguinos (siglo XVI), que luego se convirtieron en la parte de la Alameda Central.",
       english:
-        "Belonged to the Convent of Saint Diego, and is now part of the Alameda.",
+        "Once part of the Convent of Saint Diego, this site is now integrated into the Alameda.",
     },
     x: 4.23,
     y: 14.34,
@@ -125,13 +127,13 @@ const characters = [
     id: 8,
     name: {
       spanish: "Doña Mariana Violante de Carbajal",
-      english: "Doña Mariana Violantte de Carbajal",
+      english: "Doña Mariana Violante de Carbajal",
     },
     description: {
       spanish:
-        "hermosa judía perteneciente a la famosa familia que fue juzgada y condenada a la hoguera por la Inquisición, bajo la acusación de herejía.",
+        "Hermosa judía perteneciente a la famosa familia que fue juzgada y condenada a la hoguera por la Inquisición, bajo la acusación de herejía.",
       english:
-        "A Jew, she was burned at the stake having been unjustly accused of heresy. A historical issue in Mexican colonial times.",
+        "A Jew who was unjustly accused of heresy and subsequently burned at the stake, a significant event during Mexican colonial times.",
     },
     x: 4.31,
     y: 26.82,
@@ -147,9 +149,9 @@ const characters = [
     },
     description: {
       spanish:
-        "de una sola torre, cuya construcción se concluyó en 1621, modificándose su fachada a principios del siglo XIX.",
+        "De una sola torre, cuya construcción se concluyó en 1621, modificándose su fachada a principios del siglo XIX.",
       english:
-        "With only one tower, its construction was finished In 1621. Its front was modified in the first half of the 19th Century.",
+        "Built with a single tower, its construction was completed in 1621. Its facade was modified in the first half of the 19th century.",
     },
     x: 9.08,
     y: 18.64,
@@ -165,9 +167,9 @@ const characters = [
     },
     description: {
       spanish:
-        "la más notable poetisa de la Nueva España durante la Colonia, que mereció el nombre de la Décima Musa. Declaró el derecho de la mujer a la cultura y a disentir, por lo que resulta una de las precursoras de la lucha por los derechos femeninos.",
+        "La más notable poetisa de la Nueva España durante la Colonia, que mereció el nombre de la Décima Musa. Declaró el derecho de la mujer a la cultura y a disentir, por lo que resulta una de las precursoras de la lucha por los derechos femeninos.",
       english:
-        "The most famous woman poet of New Spain. She has been called the Tenth Muse. In a sense, she was a forerunner in the struggle for the equality of women.",
+        "Known as the Tenth Muse, she is the most renowned female poet of New Spain. A defender of women's rights to education, culture, and expression, her exceptional poetry remains a classic in Mexican literature.",
     },
     x: 9.48,
     y: 39.16,
@@ -183,8 +185,9 @@ const characters = [
     },
     description: {
       spanish:
-        "soñando con la comida que comprará con el producto de su hurto.",
-      english: "Dreaming of the food he will buy with his loot.",
+        "Soñando con la comida que comprará con el producto de su hurto.",
+      english:
+        "Fantasizing about the meal he'll purchase with his stolen goods.",
     },
     x: 11,
     y: 68.43,
@@ -200,9 +203,9 @@ const characters = [
     },
     description: {
       spanish:
-        "de atuendo otrora elegante, que sueña en su idilio al son de un vals, recordando a su Alteza Serenísima don Antonio López de Santa Anna.",
+        "De atuendo otrora elegante, que sueña en su idilio al son de un vals, recordando a su Alteza Serenísima don Antonio López de Santa Anna.",
       english:
-        "Reliving his past times when he participated in the glories of Mexico during the government of the General Antonio López de Santa Anna.",
+        "Revisiting his days of youth when he played a role in the achievements of Mexico under General Antonio López de Santa Anna.",
     },
     x: 9.72,
     y: 69.03,
@@ -218,9 +221,9 @@ const characters = [
     },
     description: {
       spanish:
-        "general y político que ocupó once veces la presidencia de México, entre 1833 y 1855. Como resultado de la oposición a que Santa Anna cediera Texas a Estados Unidos en 1847, México, en 1848, perdió el 51% de su territorio a causa de la invasión Norteamericana.",
+        "General y político que ocupó la presidencia de México en once ocasiones entre 1833 y 1855. A raíz de su decisión de ceder Texas a Estados Unidos en 1847, México perdió, en 1848, el 51% de su territorio debido a la invasión norteamericana.",
       english:
-        "a general and poitician, who was President of Mexico eleven times between 1830 and 1855. As a resut of the Mexican oppostion in 1847, when Santa Anna ceded Texas to the United Slates, Mexico lost 51% of its territory in 1848, because of the American invasion.",
+        "A general and politician who served as Mexico's president eleven times between 1830 and 1855. After opposing American advances in 1847, his decisions led to Mexico losing 51% of its territory to the US in 1848.",
     },
     x: 11.9,
     y: 47.16,
@@ -236,9 +239,9 @@ const characters = [
     },
     description: {
       spanish:
-        "general norteamericano cuyas tropas ocuparon la ciudad de México y acamparon en la Alameda Central durante la invasión del ejército de Estados Unidos, de 1846 a 1848.",
+        "General norteamericano cuyas tropas ocuparon la ciudad de México y acamparon en la Alameda Central durante la invasión del ejército de Estados Unidos, de 1846 a 1848.",
       english:
-        "American general, head of the troops that occupied Mexico City, camping at the Alameda from 1846 to 1848.",
+        "The American general who led the troops occupying Mexico City and encamped at the Alameda from 1846 to 1848.",
     },
     x: 13.46,
     y: 46.68,
@@ -254,9 +257,9 @@ const characters = [
     },
     description: {
       spanish:
-        "militar realista que ayudó a consumar la independencia y comandó al Ejército Trigarante en su entrada a la capital de México en 1821. Durante diez meses fue emperador de México, de 1822 a 1823.",
+        "Militar realista que ayudó a consumar la independencia y comandó al Ejército Trigarante en su entrada a la capital de México en 1821. Durante diez meses fue emperador de México, de 1822 a 1823.",
       english:
-        "Initially a Spanish loyalist. He joined his troops to those of Vicente Guerrero, then leader of the insurrection, and both consummated the Independence of Mexico, from 1822 to 1823.",
+        "Initially loyal to Spain, he later joined forces with Vicente Guerrero, leader of the insurrection, to achieve Mexico's independence. He established the short-lived First Empire between 1822 and 1823 through a series of deceptions and political maneuvers.",
     },
     x: 11.31,
     y: 39.79,
@@ -274,7 +277,7 @@ const characters = [
       spanish:
         "Proyecto del ingeniero y arquitecto José Ramón de Ibarrola. Estuvo en la Alameda Central y más tarde fue trasladado a la Alameda de Santa María la Ribera para ceder su lugar al Hemiciclo a Juárez.",
       english:
-        "Designed by the architect José Ramón de Ibarrola. It was installed at the Central Alameda and years later was moved to the Alameda of Santa Maria la Ribera.",
+        "Designed by architect José Ramón de Ibarrola, this structure was originally in the Central Alameda and was later relocated to the Alameda of Santa Maria la Ribera.",
     },
     x: 12.45,
     y: 22.03,
@@ -290,9 +293,9 @@ const characters = [
     },
     description: {
       spanish:
-        "soñando con el amor que tuvo con uno de los invasores norteamericanos, de quien procreó un hijo rubio.",
+        "Soñando con el amor vivido junto a uno de los invasores norteamericanos, con quien tuvo un hijo rubio.",
       english:
-        "Dreaming of her affair with an American invader with whom she had a blond son.",
+        "Daydreaming about her romance with an American invader with whom she had a blond son.",
     },
     x: 13.42,
     y: 70.84,
@@ -307,9 +310,9 @@ const characters = [
       english: "Drunken old soldier",
     },
     description: {
-      spanish: "soñando en sus glorias cuando era chinaco liberal.",
+      spanish: "Soñando en sus glorias cuando era chinaco liberal.",
       english:
-        "Dreaming about his glories when he fought on the liberal side in the 1860's.",
+        "Reminiscing about his glory days when he sided with the liberals in the 1860s.",
     },
     x: 17.5,
     y: 64.92,
@@ -325,9 +328,9 @@ const characters = [
     },
     description: {
       spanish:
-        "Héroe nacional y Presidente de México (1857 - 1872) durante la Guerra de Tres Años (1858-1860) y la intervención Francesa (1863 - 1887). Mereció la distinción de Benemérito de las Américas.",
+        "Héroe nacional y Presidente de México (1857 - 1872) durante la Guerra de Tres Años (1858-1860) y la intervención Francesa (1863 - 1867). Mereció la distinción de Benemérito de las Américas.",
       english:
-        "Leader of Mexico's liberals who upheld the rule of civil and democratic law.",
+        "The leader of Mexican liberals who promoted civil and democratic governance over ecclesiastical rule. As Mexico's president (1857-1872), he successfully opposed the Catholic Church, the French invasion, and Maximilian from 1863 to 1867. He was later known as the 'Glorious man of the American Continent.'",
     },
     x: 16.08,
     y: 29.23,
@@ -343,9 +346,9 @@ const characters = [
     },
     description: {
       spanish:
-        "novelista y miembro radical del Congreso de la Unión. Alcanzó el grado de coronel durante la Intervención Francesa.",
+        "Novelista y miembro radical del Congreso de la Unión. Alcanzó el grado de coronel durante la Intervención Francesa.",
       english:
-        "a Juérez liberal, fought with him as a radical reformist. He was a congressman, a colonel in the ammy that fought the French, and combined his poitical career with his talent as one of the first and finest rural novelists of Maxico.",
+        "A liberal under Juárez, he served as a congressman, a colonel against the French, and balanced his political duties with his writings, emerging as one of Mexico's premier rural novelists.",
     },
     x: 14.33,
     y: 40.92,
@@ -356,14 +359,14 @@ const characters = [
   {
     id: 21,
     name: {
-      spanish: "Ignacio Ramírez",
-      english: "Ignacio Ramirez",
+      spanish: "Ignacio Ramírez, 'El Nigromante'",
+      english: "Ignacio Ramirez, known as 'El Nigromante'",
     },
     description: {
       spanish:
-        "‘El Nigromante’, notable pensador liberal, quien en 1836, siendo estudiante, declaró que ‘Dios no existe’ en la Conferencia de la Academia de Letrán.",
+        "Notable pensador liberal, quien en 1836, siendo estudiante, declaró que ‘Dios no existe’ en la Conferencia de la Academia de Letrán.",
       english:
-        "el Nigromante, a liberal thinker and politician. His speech at the intellectual Academy of Letan in 1836 caused a great poitical upheaval by declaring God to be 'ron-existent.",
+        "A liberal thinker whose 1836 speech at the intellectual Academy of Letrán, proclaiming God's non-existence, caused a significant political stir.",
     },
     x: 17.5,
     y: 41.24,
@@ -374,14 +377,14 @@ const characters = [
   {
     id: 22,
     name: {
-      spanish: "Leandro Valle",
-      english: "Leandro Valle",
+      spanish: "Leandro Valle (1833-1861)",
+      english: "Leandro Valle (1833-1861)",
     },
     description: {
       spanish:
-        "joven soldado liberal que combatió a los norteamericanos (1847) y a los rebeldes de Puebla (1856). Participó en la Guerra de Tres Años ascendiendo a general. En 1861 fue diputado federal y comandante del Distrito Federal, combatiendo a los conservadores fue aprehendido y fusilado en el Monte de las Cruces el 23 de junio.",
+        "Joven soldado liberal que combatió a los norteamericanos (1847) y a los rebeldes de Puebla (1856). Participó en la Guerra de Tres Años ascendiendo a general. En 1861 fue diputado federal y comandante del Distrito Federal, combatiendo a los conservadores fue aprehendido y fusilado en el Monte de las Cruces el 23 de junio.",
       english:
-        "whose short life-span (1833-1861) was spent fighting against the American Invasion, the corservatives and in favour of the Republic. Was executed in 1861 at the 'Monte de las Cruces'",
+        "He spent his short life opposing the American invasion and advocating for the Republic. He was executed in 1861 at the 'Monte de las Cruces'.",
     },
     x: 18.78,
     y: 40.28,
@@ -396,8 +399,8 @@ const characters = [
       english: "A former conservative military man",
     },
     description: {
-      spanish: "soñando con el Segundo Imperio.",
-      english: "dreaming of Maximilan's Empire.",
+      spanish: "Soñando con el periodo del Segundo Imperio.",
+      english: "Dreaming of the era during Maximilian's Empire.",
     },
     x: 19.93,
     y: 67.32,
@@ -409,13 +412,13 @@ const characters = [
     id: 24,
     name: {
       spanish: "Emperatriz Carlota",
-      english: "Carlota",
+      english: "Empress Carlota",
     },
     description: {
       spanish:
-        "esposa de Maximiliano de Hasburgo. Ordenó el arreglo de la Alameda debido a las malas condiciones en que se encontraba.",
+        "Esposa de Maximiliano de Hasburgo. Ordenó el arreglo de la Alameda debido a las malas condiciones en que se encontraba.",
       english:
-        "wife of the so-called emperor Maximilian. She ordered to beautity the Alameda during the Empire.",
+        "Empress and wife to Maximilian, she beautified the Alameda during their reign.",
     },
     x: 18.23,
     y: 50.36,
@@ -431,9 +434,9 @@ const characters = [
     },
     description: {
       spanish:
-        "notable austriaco nombrado emperador por los conservadores mexicanos y apoyado por el ejército francés, de 1864 a 1867. Fue fusilado en el Centro de las Campanas, por orden de Benito Juárez.",
+        "Notable austriaco nombrado emperador por los conservadores mexicanos y apoyado por el ejército francés, de 1864 a 1867. Fue fusilado en el Centro de las Campanas, por orden de Benito Juárez.",
       english:
-        "for a while (1864-1867) emperor of some parts of the Mexican territory, imposed by the French with full support from the Catholic Church and the conservatives. He was tried as an usurper and found guilty, was executed in 1867 at the 'Cerro de las Campanas'.",
+        "Briefly emperor of parts of Mexico from 1864-1867, he was imposed by the French with the backing of the Catholic Church and conservatives. Deemed an usurper, he was executed in 1867 at the 'Cerro de las Campanas'.",
     },
     x: 19.88,
     y: 49.72,
@@ -449,9 +452,9 @@ const characters = [
     },
     description: {
       spanish:
-        "oficial de la guardia de la emperatriz Carlota y tío de Diego Rivera.",
+        "Oficial de la guardia personal de la emperatriz Carlota y, además, tío del artista Diego Rivera.",
       english:
-        "was an imperial guard In Maximlian's court and an uncle of the artist Diego Rivera.",
+        "An imperial guard in Maximilian's court and uncle to the artist, Diego Rivera.",
     },
     x: 18.97,
     y: 47.8,
@@ -466,9 +469,9 @@ const characters = [
       english: "General Miguel Miramón",
     },
     description: {
-      spanish: "colaboró con el Imperio y fue fusilado junto con Maximiliano.",
+      spanish: "Colaboró con el Imperio y fue fusilado junto a Maximiliano.",
       english:
-        "an extreme conservative politician, was President of Mexico for a short time and was shot alongside Maximilian, as being guilty of treason to the Mexican nation.",
+        "A staunch conservative who briefly served as Mexico's president. He was executed alongside Maximilian for betraying the Mexican nation.",
     },
     x: 20.89,
     y: 49.56,
@@ -484,8 +487,8 @@ const characters = [
     },
     description: {
       spanish:
-        "mariscal de las tropas extranjeras durante la Intervención Francesa.",
-      english: "leader of the French invaders.",
+        "Mariscal de las tropas extranjeras durante la Intervención Francesa.",
+      english: "Commander of the French invading forces.",
     },
     x: 21.4,
     y: 54.2,
@@ -501,9 +504,9 @@ const characters = [
     },
     description: {
       spanish:
-        "militar republicano a quien Maximiliano rindió su espada en el sitio de Querétaro.",
+        "Militar republicano a quien Maximiliano entregó su espada tras ser derrotado en el sitio de Querétaro.",
       english:
-        "liberal republican general who accepted Maximilian's surrender in1867 at Querétaro.",
+        "Liberal Republican general who accepted Maximilian's surrender in 1867 at Querétaro.",
     },
     x: 22.31,
     y: 47.16,
@@ -515,13 +518,13 @@ const characters = [
     id: 30,
     name: {
       spanish: "Papelerito",
-      english: "A news-paper boy",
+      english: "A Newspaper boy",
     },
     description: {
       spanish:
-        "vendiendo El Imparcial, uno de los periódicos más importantes de la época.",
+        "Vendiendo 'El Imparcial', uno de los periódicos más importantes de la época.",
       english:
-        "selling El Imparcial, the most important conservative journal at that time.",
+        "Selling 'El Imparcial', the most significant conservative journal of that era.",
     },
     x: 25.2,
     y: 64.92,
@@ -533,12 +536,12 @@ const characters = [
     id: 31,
     name: {
       spanish: "Globero",
-      english: "A balloon-seller",
+      english: "A Balloon-seller",
     },
     description: {
       spanish:
-        "personaje típico de los domingos ofreciendo sus globos de colores.",
-      english: "a Sunday typical character.",
+        "Personaje típico de los domingos ofreciendo sus globos de colores.",
+      english: "A typical character seen on Sundays.",
     },
     x: 24.42,
     y: 55.16,
@@ -554,8 +557,8 @@ const characters = [
     },
     description: {
       spanish:
-        "vendiendo dulces típicos: muégano, enjambre de nuez, pepitoria, etcétera.",
-      english: "selling Mexican sweets.",
+        "Vendiendo dulces típicos: muégano, enjambre de nuez, pepitoria, etcétera.",
+      english: "Selling traditional Mexican sweets.",
     },
     x: 26.95,
     y: 63.8,
@@ -571,8 +574,8 @@ const characters = [
     },
     description: {
       spanish:
-        "ofreciendo su mercancía: pirulís, entre los que hay jinetes, corazones, damas, chiles verdes y rojos y la lira del poeta.",
-      english: "with samples of more elaborate and artistic Mexican sweets.",
+        "Ofreciendo su mercancía: pirulís, entre los que hay jinetes, corazones, damas, chiles verdes y rojos y la lira del poeta.",
+      english: "Offering elaborate and artistic Mexican sweets",
     },
     x: 26.67,
     y: 54.68,
@@ -588,9 +591,9 @@ const characters = [
     },
     description: {
       spanish:
-        "el Duque Job, poeta precursor del modernismo en América. Fundó la revista Azul.",
+        "El Duque Job, poeta precursor del modernismo en América. Fundó la revista Azul.",
       english:
-        "el Duque Job, a distinguished poet, forerunner of the Modernistic school. He founded Azul magazine.",
+        "Known as 'El Duque Job', a renowned poet and forerunner of the Modernistic school. He founded the 'Azul' magazine.",
     },
     x: 27.59,
     y: 53.24,
@@ -605,9 +608,9 @@ const characters = [
       english: "Lucecita Díaz",
     },
     description: {
-      spanish: "hija de don Porfirio y su primera esposa, Delfina Ortega.",
+      spanish: "Hija de don Porfirio y su primera esposa, Delfina Ortega.",
       english:
-        "daughter of Porfirio Diaz's first marriage with Delfina Ortega.",
+        "Daughter of Porfirio Diaz's first marriage with Delfina Ortega.",
     },
     x: 32.68,
     y: 54.68,
@@ -623,9 +626,9 @@ const characters = [
     },
     description: {
       spanish:
-        "segunda esposa de Porfirio Díaz e hija de don Manuel Romero Rubio, ministro de Gobernación del porfiriato. Para representarlas Rivera tomó como modelos a sus tías Vicenta y Cesárea.",
+        "Segunda esposa de Porfirio Díaz e hija de don Manuel Romero Rubio, ministro de Gobernación del porfiriato. Para representarlas Rivera tomó como modelos a sus tías Vicenta y Cesárea.",
       english:
-        "Díaz's second wife, daughter of his political interior minister, Manuel Romero Rubio. To represent them, Rivera used his aunts Vicenta and Cesarea as models.",
+        "Díaz's second wife and daughter of his political interior minister, Manuel Romero Rubio. Rivera used his aunts, Vicenta and Cesarea, as models to depict them.",
     },
     x: 34.93,
     y: 56.44,
@@ -641,9 +644,9 @@ const characters = [
     },
     description: {
       spanish:
-        "destacado poeta y padre de la Independencia de Cuba, que vivió en México de febrero de 1875 a finales de diciembre de 1876. Tuvo una actividad notable de esos dos años en las letras mexicanas, relacionándose con los más renombrados literatos de la época. En 1894 hizo un viaje rápido para reunir fondos para la invasión por la independencia de su isla natal bajo el dominio español. Murió en el combate de la sabana de Dos Ríos el 19 de mayo de 1895.",
+        "Destacado poeta y padre de la Independencia de Cuba, que vivió en México de febrero de 1875 a finales de diciembre de 1876. Tuvo una actividad notable de esos dos años en las letras mexicanas, relacionándose con los más renombrados literatos de la época. En 1894 hizo un viaje rápido para reunir fondos para la invasión por la independencia de su isla natal bajo el dominio español. Murió en el combate de la sabana de Dos Ríos el 19 de mayo de 1895.",
       english:
-        "father of Cuba's independence. He lived in Mexico from 1875 to 1876. An outstanding modernistic poet, was part of the mainstream of our country's cultural and literary life. He returned to Mexico in 1894 in search of support for his struggle against Spain's domination at his country. Marti died in combat in Cuba on May 19, 1895.",
+        "The father of Cuba's independence. He lived in Mexico between 1875-1876. A notable modernistic poet, he played a significant role in Mexico's cultural and literary life. Marti returned to Mexico in 1894 seeking support against Spanish rule in Cuba and died in combat on May 19, 1895.",
     },
     x: 37.68,
     y: 53.56,
@@ -654,14 +657,14 @@ const characters = [
   {
     id: 38,
     name: {
-      spanish: "Diego niño",
+      spanish: "Diego, de niño",
       english: "Diego Rivera as a child,",
     },
     description: {
       spanish:
-        "autorretrato del pintor, quién se representó de la mano de la Muerte Catrina y soñando con el amor por excelencia, que está personalizado por Frida Kahlo.",
+        "Autorretrato del pintor Diego Rivera de niño. Se representa tomado de la mano de la Muerte Catrina, soñando con su amor eterno, personificado por Frida Kahlo.",
       english:
-        "a selfportrait. We see him hand in hand with a typical Mexican image of a skull, the 'Calavera Catrina'; day-dreaming of his ideal love, his future wite: Frida Kahlo.",
+        "A self-portrait, depicting him with a traditional Mexican symbol of death, the 'Calavera Catrina', daydreaming of his future love, Frida Kahlo.",
     },
     x: 38.92,
     y: 60.15,
@@ -672,14 +675,14 @@ const characters = [
   {
     id: 39,
     name: {
-      spanish: "Frida Khalo",
-      english: "Frida Khalo",
+      spanish: "Frida Kahlo",
+      english: "Frida Kahlo",
     },
     description: {
       spanish:
-        "pintora mexicana que estuvo casada con Rivera durante veinticinco años. Lleva en su mano el símbolo chino del ying-yang.",
+        "Renombrada pintora mexicana que estuvo casada con Rivera durante veinticinco años. En su mano, sostiene el símbolo chino del yin-yang.",
       english:
-        "Diego's wife, an outstanding painter influenced by surrealism and mexican folk art. She was inspired by popular events and people, Diego and herself, and with love, suffering, and deliverance. She is holding the ying-yang oriantal symbol.",
+        "Diego's wife and a prominent painter influenced by surrealism and Mexican folk art. Her works encapsulate love, suffering, and salvation, often featuring events, Diego, and herself. She holds the yin-yang Oriental symbol.",
     },
     x: 39.86,
     y: 54.8,
@@ -695,9 +698,9 @@ const characters = [
     },
     description: {
       spanish:
-        "personaje creado por el grabador José Guadalupe Posada, a quien Rivera representó con una boa de plumas que no es más que Quetzalcóatl, la serpiente emplumada de las culturas prehispánicas. Así rinde culto a ’Tonantzin’.",
+        "Personaje creado por el grabador José Guadalupe Posada, a quien Rivera representó con una boa de plumas que no es más que Quetzalcóatl, la serpiente emplumada de las culturas prehispánicas. Así rinde culto a ’Tonantzin’.",
       english:
-        "a Mexican representation of death created by Posada. Diego uses the feather stole around her shoulders to simbolize Quetzalcoatl, God of Prehispanic cultures.",
+        "A Mexican representation of death by Posada. Diego adorns her with a feather stole symbolizing Quetzalcoatl, the God of Prehispanic cultures.",
     },
     x: 42.57,
     y: 51.99,
@@ -713,9 +716,9 @@ const characters = [
     },
     description: {
       spanish:
-        "editor de Regeneración, publicación liberal antiporfirista, y precursor de la Revolución Mexicana a través del Partido Liberal (fundado en 1906), cuyos organizadores, además de él, fueron su hermano Enrique, Anselmo L. Figueroa, Praxedis G. Guerrero y Librado Rivera. Anarquista indomable, perseguido por sus ideas políticas, murió en prisión en Estados Unidos.",
+        "Editor de Regeneración, publicación liberal antiporfirista, y precursor de la Revolución Mexicana a través del Partido Liberal (fundado en 1906), cuyos organizadores, además de él, fueron su hermano Enrique, Anselmo L. Figueroa, Praxedis G. Guerrero y Librado Rivera. Anarquista indomable, perseguido por sus ideas políticas, murió en prisión en Estados Unidos.",
       english:
-        "ideologist, writer, anarchistforerunner of the Mexican Revolution. Member of the Mexican Liberal Party as his brother Enrique, Anselmo L. Figueroa, Praxedis G. Guerrero and Librado Rivera (founded in Saint Louis, Mo., USA, on June the first, 1906). Persecuted for his political ideals, he died in prison at Fort Leavenworth, Kansas.",
+        "An ideologist, writer, and anarchist precursor of the Mexican Revolution. A member of the Mexican Liberal Party, he faced persecution and died in prison at Fort Leavenworth, Kansas.",
     },
     x: 45.46,
     y: 53.45,
@@ -731,7 +734,7 @@ const characters = [
     },
     description: {
       spanish:
-        "extraordinario grabador que ilustró las publicaciones populares del México anterior a la Revolución, y a quien Diego Rivera consideró siempre como un maestro importante en su formación plástica. Una de sus más famosas creaciones fue la Calavera Catrina.",
+        "Extraordinario grabador que ilustró las publicaciones populares del México anterior a la Revolución, y a quien Diego Rivera consideró siempre como un maestro importante en su formación plástica. Una de sus más famosas creaciones fue la Calavera Catrina.",
       english:
         "Mexico's foremost pre-revolutionary engraver. His style and his choice of folk subjects, such as festivities and everyday events, used to illustrate popular publications, with skeletons like the Calavera Catrina, served as an inspiration and model for Rivera and many others.",
     },
@@ -749,9 +752,9 @@ const characters = [
     },
     description: {
       spanish:
-        "colaborador muy cercano de Ricardo Flores Magón, quien sufrió persecución y prisión como todos los miembros del Partido Liberal, al cual pertenecía. Amigo y seguidor fiel de las ideas anarquistas de Flores Magón, en 1918 fue sentenciado junto con él a sufrir larga condena.",
+        "Colaborador muy cercano de Ricardo Flores Magón, quien sufrió persecución y prisión como todos los miembros del Partido Liberal, al cual pertenecía. Amigo y seguidor fiel de las ideas anarquistas de Flores Magón, en 1918 fue sentenciado junto con él a sufrir larga condena.",
       english:
-        "member of the Mexican Liberal Party, a militant with Flores Magón, he shared with him long prison sentences.",
+        "A Mexican Liberal Party member, he endured lengthy prison sentences alongside Flores Magón.",
     },
     x: 48.09,
     y: 54.47,
@@ -767,9 +770,9 @@ const characters = [
     },
     description: {
       spanish:
-        "cuidando que las 'gentes decentes' puedan transitar tranquilamente sin mezclarse con gente del pueblo.",
+        "Cuidando que las 'gentes decentes' puedan transitar tranquilamente sin mezclarse con gente del pueblo.",
       english:
-        "a 1910 'cop', looking over to ensure 'decent people' are not disturbed by 'the rabble'",
+        "A 1910 policeman, ensuring 'decent people' remain undisturbed by 'the rabble'.",
     },
     x: 49.72,
     y: 54.03,
@@ -785,14 +788,14 @@ const characters = [
     },
     description: {
       spanish:
-        "reanudó los viajes aerostáticos en globo en la capital de la República en 1963 (se iniciaron en 1784 y por peligrosos se prohibieron en la ciudad de México en 1862). Sueña en su globo República Mexicana, en el cual asciende agitando una bandera tricolor.",
+        "Reanudó los viajes aerostáticos en globo en la capital de la República en 1863, después de que estos fueran prohibidos en la ciudad de México en 1862 por considerarse peligrosos. Sueña ascendiendo en su globo 'República Mexicana', agitando una bandera tricolor.",
       english:
-        "Mexico's foremost aeronaut of the second half of the 19th Century. A very popular personage, he is shown here dreaming of a balloon of his own creation, República Mexicana, decorated with Mexican flags.",
+        "Mexico's primary aeronaut during the late 19th Century. He's portrayed daydreaming of his balloon, 'República Mexicana', adorned with Mexican flags.",
     },
     x: 50.19,
     y: 8.95,
     width: 5,
-    height: 10,
+    height: 40,
     box: null,
   },
   {
@@ -803,9 +806,9 @@ const characters = [
     },
     description: {
       spanish:
-        "chiutlahua legítima, caricortada y garbosa, que enfrenta al gendarme que le cierra el paso para que no moleste a las personas ‘decentes’ que pasean en la Alameda. En esta figura Rivera rindió homenaje a uno de sus amores, una famosa tiple.",
+        "Chiutlahua legítima, caricortada y garbosa, que enfrenta al gendarme que le cierra el paso para que no moleste a las personas ‘decentes’ que pasean en la Alameda. En esta figura Rivera rindió homenaje a uno de sus amores, una famosa tiple.",
       english:
-        "a real chiutilahua and popular character is here painted challenging the 'gendarme' and the 'decent people', Rivera thus paid hommage to are his loves, a famous singer of popular theatre.",
+        "A spirited figure, a real Chiutilahua and popular character, is here painted challenging the 'gendarme' and the 'decent people', Rivera's tribute to his beloved, a renowned theater singer.",
     },
     x: 51.68,
     y: 58.54,
@@ -821,9 +824,9 @@ const characters = [
     },
     description: {
       spanish:
-        "eterno candidato a la Presidencia de la República durante el porfiriato. Sueña que el dictador le entrega la silla presidencial, la banda tricolor y la gloria.",
+        "Eterno candidato a la Presidencia de la República durante el porfiriato. Sueña que el dictador le entrega la silla presidencial, la banda tricolor y la gloria.",
       english:
-        "was a permanent 'candidate' for President during Porfirio Diaz's time. A harmless popular personage is shown here dreaming of receiving the Presidency from the dictator himself.",
+        "A recurring 'candidate' during Diaz's regime, whimsically depicted imagining the presidency bestowed by Diaz himself.",
     },
     x: 53.62,
     y: 52.21,
@@ -839,9 +842,9 @@ const characters = [
     },
     description: {
       spanish:
-        "general político que ocupó la Presidencia de la República durante treinta años.",
+        "General político que ocupó la Presidencia de la República durante treinta años.",
       english:
-        "dictator of Mexico, who ruled for more than thirty years until 1911 when overthrown by the Revolution.",
+        "The Mexican dictator who held power for over thirty years until until he was ousted in 1911.",
     },
     x: 56.37,
     y: 35.46,
@@ -857,9 +860,9 @@ const characters = [
     },
     description: {
       spanish:
-        "apodado General Medallas. Héroe del pueblo durante la Invasión Norteamericana. Se convirtió en un personaje característico del Paseo de la Alameda, de los chiquillos y bromistas que lo condecoraban con objetos brillantes.",
+        "Apodado General Medallas. Héroe del pueblo durante la Invasión Norteamericana. Se convirtió en un personaje característico del Paseo de la Alameda, de los chiquillos y bromistas que lo condecoraban con objetos brillantes.",
       english:
-        "Guerrero, a popular hero during the American invasion. Having outlived his time, he became a permanent fodure of the Alameda landscape. He was nicknamed General Medals.",
+        "Guerrero, a popular hero during the American invasion. Having outlived his time, he became a permanent staple of the Alameda landscape. He was nicknamed General Medals.",
     },
     x: 56.51,
     y: 55.26,
@@ -875,9 +878,9 @@ const characters = [
     },
     description: {
       spanish:
-        "con dos niños que se burlan; el niño, del General Medallas, y la niña de una pequeña indígena que llora porque la sacan con su familia de la Alameda.",
+        "Con dos niños que se burlan; el niño, del General Medallas, y la niña de una pequeña indígena que llora porque la sacan con su familia de la Alameda.",
       english:
-        "and two children making fun of General Medals and a poor peasant child.",
+        "Mocking General Medals alongside their children, at the expense of a peasant child.",
     },
     x: 60.59,
     y: 53.33,
@@ -893,9 +896,9 @@ const characters = [
     },
     description: {
       spanish:
-        "que impide que una familia campesina transite por la Alameda, ‘reservada para las clases acomodadas’, expulsándola por la fuerza.",
+        "Que impide que una familia campesina transite por la Alameda, ‘reservada para las clases acomodadas’, expulsándola por la fuerza.",
       english:
-        "policeman, who is expelling a peasant family from the Alameda park, reserved for 'decent people'",
+        "A policeman, driving a peasant family out of the Alameda park, an area designated for 'decent people'.",
     },
     x: 68.72,
     y: 54.61,
@@ -910,13 +913,13 @@ const characters = [
       english: "A police band",
     },
     description: {
-      spanish: "tocando en el kiosko de la Alamada.",
-      english: "playing at the band stand.",
+      spanish: "Tocando en el kiosko de la Alamada.",
+      english: "Performing at the bandstand.",
     },
-    x: 68.8,
-    y: 26.89,
-    width: 4,
-    height: 8,
+    x: 65.73,
+    y: 38.83,
+    width: 7,
+    height: 7,
     box: null,
   },
   {
@@ -927,9 +930,9 @@ const characters = [
     },
     description: {
       spanish:
-        "que es expulsada por la fuerza. Sus miembros sueñan con la lucha reivindicatoria de sus derechos. El padre y la madre aparecen como revolucionarios y el hijo dispara sobre el represor.",
+        "Es expulsada por la fuerza. Sus miembros sueñan con la lucha reivindicatoria de sus derechos. El padre y la madre aparecen como revolucionarios y el hijo dispara sobre el represor.",
       english:
-        "They dream of themselves as fighters and revolutionaries and their son dreams himsel shooting at the oppressor.",
+        "Dreaming of their revolutionary roles, with their child envisioning confronting the oppressor.",
     },
     x: 74.42,
     y: 56.12,
@@ -945,9 +948,9 @@ const characters = [
     },
     description: {
       spanish:
-        "que es expulsado junto con la familia campesina. Sueña con participar en la lucha popular que derribará el feudalismo porfiriano. Los árboles de la follajes, en esta sección cobran ritmos dinámicos que enmarcan la ola de violento colorido que emana de los sueños de los personajes representados.",
+        "Que es expulsado junto con la familia campesina. Sueña con participar en la lucha popular que derribará el feudalismo porfiriano. Los árboles con sus follajes en esta sección muestran ritmos dinámicos que enmarcan la ola de violento colorido que emana de los sueños de los personajes representados.",
       english:
-        "also expelled with the poor family. He shares the same dream as the peasant family.",
+        "Exiled alongside the peasant family, he shares their revolutionary dream.",
     },
     x: 81.89,
     y: 60.93,
@@ -963,9 +966,9 @@ const characters = [
     },
     description: {
       spanish:
-        "soñando con buenas cosechas de maíz gracias a la ayuda de un arado de disco, con muchos pesos y un pellejo de pulque.",
+        "Soñando con buenas cosechas de maíz gracias a la ayuda de un arado de disco, con muchos pesos y un pellejo de pulque.",
       english:
-        "dreaming of money and good corn harvests with the help of a mechanical plough.",
+        "Fantasizing about achieving wealth through fruitful corn yields, aided by a mechanical plow.",
     },
     x: 84.92,
     y: 65.6,
@@ -980,8 +983,8 @@ const characters = [
       english: "Fruit vendor",
     },
     description: {
-      spanish: "ofreciendo su mercancía.",
-      english: "offering his products.",
+      spanish: "Ofreciendo su mercancía.",
+      english: "Offering his products.",
     },
     x: 86.89,
     y: 64.77,
@@ -997,9 +1000,9 @@ const characters = [
     },
     description: {
       spanish:
-        "escritor, periodista y revolucionario maderista, fundador del México Nuevo y del Nueva Era y colaborador del Antirreeleccionista. Está soñando con José Vasconcelos en un cambio radical para el país.",
+        "Escritor, periodista y revolucionario maderista, fundador del México Nuevo y del Nueva Era y colaborador del Antirreeleccionista. Está soñando con José Vasconcelos en un cambio radical para el país.",
       english:
-        "revolutionary writer and journalist under Madero. He was his private secretary. He created the newspapers México Nuevo and Nueva Era.",
+        "A revolutionary writer for Madero and his private secretary. He founded 'México Nuevo' and 'Nueva Era' newspapers.",
     },
     x: 89.72,
     y: 66.83,
@@ -1015,9 +1018,9 @@ const characters = [
     },
     description: {
       spanish:
-        "destacado político y escritor mexicano. Autor intelectual del llamado Renacimiento del muralismo mexicano; durante su gestión como rector de la Universidad y primer Secretario de Educación, invitó a varios pintores, entre ellos a Rivera, para decorar los muros de la Preparatoria (Antiguo Colegio de San Ildefonso).",
+        "Destacado político y escritor mexicano. Autor intelectual del llamado Renacimiento del muralismo mexicano; durante su gestión como rector de la Universidad y primer Secretario de Educación, invitó a varios pintores, entre ellos a Rivera, para decorar los muros de la Preparatoria (Antiguo Colegio de San Ildefonso).",
       english:
-        "an outstanding politician and mexican writer. Intellectual author of the Mexican Muralist Renaissance. While he was the rector of the University and first Minister of Education, he invited many painters as Rivera to decorate the walls of the Escuela Nacional Preparatoria.",
+        "A prominent politician and Mexican author. As the University's rector and first Education Minister, he summoned painters like Rivera to beautify the walls of the Escuela Nacional Preparatoria.",
     },
     x: 89.29,
     y: 55.44,
@@ -1033,9 +1036,9 @@ const characters = [
     },
     description: {
       spanish:
-        "que habla a mujeres y hombres jóvenes de la pequeña burguesía y del artesanado sobre las ideas revolucionarias publicadas en Regeneración, editando por Ricardo Flores Magón, donde el ideal de “Tierra y Libertad” del Partido Liberal está explicado por Lázaro Gutiérrez de Lara, uno de los ideólogos precursores de la Revolución Mexicana, que estallaría en 1910. Este personaje está representado por Manuel Martínez, quien fue ayudante personal de Diego Rivera durante años.",
+        "Que habla a mujeres y hombres jóvenes de la pequeña burguesía y del artesanado sobre las ideas revolucionarias publicadas en Regeneración, editando por Ricardo Flores Magón, donde el ideal de “Tierra y Libertad” del Partido Liberal está explicado por Lázaro Gutiérrez de Lara, uno de los ideólogos precursores de la Revolución Mexicana, que estallaría en 1910. Este personaje está representado por Manuel Martínez, quien fue ayudante personal de Diego Rivera durante años.",
       english:
-        "who is speaking to the people about the Revolution advocated by Florens Magón. Rivera used model his own assistant Manuel Martinez.",
+        "Advocating for the revolution as inspired by Flores Magón. Rivera used his assistant, Manuel Martinez, as a model.",
     },
     x: 92.71,
     y: 54.34,
@@ -1047,13 +1050,13 @@ const characters = [
     id: 60,
     name: {
       spanish: "Chamaco de clase media",
-      english: "Middle class boy eating a Mexican torta",
+      english: "Middle-Class Boy Eating a Mexican Torta",
     },
     description: {
       spanish:
-        "comiendo una torta. Aquí vuelve a autorretratarse Diego Rivera, soñando con la que habría sido de ser su familia: esposa, hijas y nieto, así como amigos cercanos.",
+        "Comiendo una torta. Aquí vuelve a autorretratarse Diego Rivera, soñando con la que habría sido de ser su familia: esposa, hijas y nieto, así como amigos cercanos.",
       english:
-        "It is also a selfportrait of Rivera dreaming of his wife, daughters and grandson.",
+        "Rivera's self-portrait, dreaming of his wife, children, and grandchild.",
     },
     x: 94.8,
     y: 64.79,
@@ -1069,9 +1072,9 @@ const characters = [
     },
     description: {
       spanish:
-        "que las expende al niño de clase media, a un estudiante de leyes y a dos alumnos de la antigua Escuela de Aspirantes de Tlalpan.",
+        "Que las expende al niño de clase media, a un estudiante de leyes y a dos alumnos de la antigua Escuela de Aspirantes de Tlalpan.",
       english:
-        "selling to the middle class boy, a law student and other students.",
+        "Serving the middle-class boy, as well as a law student and other scholars.",
     },
     x: 95.43,
     y: 70.25,
@@ -1086,8 +1089,8 @@ const characters = [
       english: "Ruth Rivera Marin",
     },
     description: {
-      spanish: "hija de Diego y de Lupe Marín, su segunda esposa.",
-      english: "daughter of Diego and his second wife Lupe Marin.",
+      spanish: "Hija de Diego y de Lupe Marín, su segunda esposa.",
+      english: "Daughter of Diego and his second wife, Lupe Marin.",
     },
     x: 91.33,
     y: 54.12,
@@ -1099,12 +1102,13 @@ const characters = [
     id: 63,
     name: {
       spanish: "Rosa Rolando de Covarrubias",
-      english: "",
+      english: "Rosa Rolando de Covarrubias",
     },
     description: {
       spanish:
-        "gran amiga de Rivera y esposa del también pintor Miguel Covarrubias.",
-      english: "",
+        "Gran amiga de Rivera y esposa del también pintor Miguel Covarrubias.",
+      english:
+        "Good friend of Rivera and wife of Miguel Covarrubias, also a painter",
     },
     x: 94.13,
     y: 54.51,
@@ -1120,8 +1124,8 @@ const characters = [
     },
     description: {
       spanish:
-        "hija mayor de Diego y de Lupe Marín. Lleva en brazos a su pequeño hijo Juan Pablo.",
-      english: "Diego's oldest daughter, hoiding her chlld Juan Pablo.",
+        "Hija mayor de Diego y de Lupe Marín. Lleva en brazos a su pequeño hijo Juan Pablo.",
+      english: "Diego's eldest daughter, holding her child, Juan Pablo.",
     },
     x: 95.17,
     y: 55.81,
@@ -1137,8 +1141,8 @@ const characters = [
     },
     description: {
       spanish:
-        "segunda de las cuatro esposas que tuvo Rivera a la largo de su vida y madre de Ruth y Guadalupe.",
-      english: "the second of Rivera's four wives.",
+        "Segunda de las cuatro esposas que tuvo Rivera a lo largo de su vida y madre de Ruth y Guadalupe.",
+      english: "The second of Rivera's four wives.",
     },
     x: 96.62,
     y: 53.34,
@@ -1153,8 +1157,8 @@ const characters = [
       english: "Pinwheels-seller",
     },
     description: {
-      spanish: "que eleva su mercancía.",
-      english: "raising and showing the toys.",
+      spanish: "Que eleva y muestra su mercancía.",
+      english: "Raising and showing the toys for sale.",
     },
     x: 93.73,
     y: 25.4,
@@ -1170,9 +1174,9 @@ const characters = [
     },
     description: {
       spanish:
-        "aparece como parte de la trilogía del pueblo: el campesino, el soldado y el obrero. Los tres sellan con las manos entrelazadas el compromiso del sufragio efectivo representado por la urna. Este sueño expresado por el obrero revolucionario del nivel inferior está coronado en la parte superior por la efigie de Francisco I. Madero y el lema “Sufragio Efectivo. No Reelección”, materializando el sueño de la industrialización de México.",
+        "Aparece como parte de la trilogía del pueblo: el campesino, el soldado y el obrero. Los tres sellan con las manos entrelazadas el compromiso del sufragio efectivo representado por la urna. Este sueño expresado por el obrero revolucionario del nivel inferior está coronado en la parte superior por la efigie de Francisco I. Madero y el lema “Sufragio Efectivo. No Reelección”, materializando el sueño de la industrialización de México.",
       english:
-        "revolutionary general and member of the Constitutional Convention (1916-1917). He dreams along with three people, simbolized by a worker, a soldier and a peasant, about full political democracy in Mexico. They dream of the fulfillment of Madero's ideals of 'Effective sufrage. No re-election'.",
+        "A revolutionary general dreaming, alongside a worker, soldier, and peasant, of Mexico's political democracy. They envision the realization of Madero's 'Effective suffrage. No re-election'.",
     },
     x: 91.51,
     y: 36.3,
@@ -1188,8 +1192,9 @@ const characters = [
     },
     description: {
       spanish:
-        "con la avidez pintada en el rostro, simboliza al ‘fósil’ de Derecho que sueña con hacer una gran carrera política sin escrúpulos, enriqueciéndose y obteniendo un inmenso poder.",
-      english: "a law student dreams of becoming a corrupt and rich poitician.",
+        "Con la avidez pintada en el rostro, simboliza al ‘fósil’ de Derecho que sueña con hacer una gran carrera política sin escrúpulos, enriqueciéndose y obteniendo un inmenso poder.",
+      english:
+        "A law student, he daydreams of a prosperous, corrupt political future.",
     },
     x: 97.93,
     y: 58.22,
@@ -1205,9 +1210,9 @@ const characters = [
     },
     description: {
       spanish:
-        "con el uniforme del plantel militar, soñando con los traidores y asesinos Victoriano Huerta y Manuel Mondragón, y con los planes de la contrarrevolución.",
+        "Con el uniforme del plantel militar, soñando con los traidores y asesinos Victoriano Huerta y Manuel Mondragón, y con los planes de la contrarrevolución.",
       english:
-        "dream with the traitors Victoriano Huerta and Manuel Mondragon, and the assassination of President Madero.",
+        "Fantasizing about the traitors Victoriano Huerta and Manuel Mondragon, and the assassination of President Madero.",
     },
     x: 97.62,
     y: 54.95,
@@ -1223,9 +1228,9 @@ const characters = [
     },
     description: {
       spanish:
-        "general que mandó asesinar a Madero y a José María Pino Suárez para usurpar la Presidencia de la República.",
+        "General que mandó asesinar a Madero y a José María Pino Suárez para usurpar la Presidencia de la República.",
       english:
-        "army general, traitor and assassin of José María Pino Suárez and Francisco I. Madero, he became his succesor.",
+        "A general and traitor responsible for the deaths of José María Pino Suárez and Francisco I. Madero.",
     },
     x: 96.62,
     y: 46.47,
@@ -1241,9 +1246,9 @@ const characters = [
     },
     description: {
       spanish:
-        "general cómplice de Huerta que mandó las fuerzas federales contra Madero durante la Decena Trágica. Padre de Nahui Olin.",
+        "General cómplice de Huerta que mandó las fuerzas federales contra Madero durante la Decena Trágica. Padre de Nahui Olin.",
       english:
-        "army general, an accomplice of Huerta in the assassination of Madero. Nahui Olin's father.",
+        "Army general, an accomplice of Huerta in the assassination of Madero. Nahui Olin's father.",
     },
     x: 97.9,
     y: 46.23,
@@ -1259,9 +1264,9 @@ const characters = [
     },
     description: {
       spanish:
-        "(Plutarco Elías Calles?, Miguel Alemán), despachando sobre la caja fuerte de Cinycomex, S.A. de R.I. (Sociedad Anónima de Recursos Ilimitados), manejando inmensas cantidades de dinero y acariciando a una joven rubia con anuencia de sus consejeros, uno de ellos un arzobispo (Luís Gonzaga María Martīnez).",
+        "(Plutarco Elías Calles?, Miguel Alemán), despachando sobre la caja fuerte de Cinycomex, S.A. de R.I. (Sociedad Anónima de Recursos Ilimitados), manejando inmensas cantidades de dinero y acariciando a una joven rubia con anuencia de sus consejeros, uno de ellos un arzobispo (Luís Gonzaga María Martínez).",
       english:
-        "a symbolic image of corrupt presidents. Handling an enormous amount of  money and fondling a blonde woman by consent of an archbishop.",
+        "Symbolizing corrupt presidencies, engaged in fiscal indulgence and dalliances, sanctioned by an archbishop.",
     },
     x: 95.64,
     y: 17.76,
@@ -1277,9 +1282,9 @@ const characters = [
     },
     description: {
       spanish:
-        "según definición de Rivera (General Máximo Ávila Camacho?, Ingeniero Alberto J. Pani?, General Juan Andrew Almazán?), abraza a una joven mujer que se encuentra encaramada sobre un árbol (el jóven árbol de la burguesía), mientras con la otra mano sostiene una alta pila de billetes. Un niño pequeño le da los brazos casi oculto tras los rehiletes (símbolo de la inconstancia y versatilidad de los políticos). La dama del árbol empuja con uno de sus pies el carrizo de los rehiletes. “Es esta dama, feliz y heredara de centenas de millones, la culminación de la familia revolucionaria y el 'pendant' de Violante de Carvajal…'.",
+        "Según definición de Rivera (General Máximo Ávila Camacho?, Ingeniero Alberto J. Pani?, General Juan Andrew Almazán?), abraza a una joven mujer que se encuentra encaramada sobre un árbol (el jóven árbol de la burguesía), mientras con la otra mano sostiene una alta pila de billetes. Un niño pequeño le da los brazos casi oculto tras los rehiletes (símbolo de la inconstancia y versatilidad de los políticos). La dama del árbol empuja con uno de sus pies el carrizo de los rehiletes. \"Es esta dama, feliz y heredera de centenas de millones, la culminación de la familia revolucionaria y el 'pendant' de Violante de Carvajal…\".",
       english:
-        "a symbolic image of corrupt poiticians making their fortune by working for the govemment.",
+        "A symbolic image of corrupt poiticians making their fortune by working for the govemment.",
     },
     x: 97.25,
     y: 31.9,
@@ -1295,9 +1300,9 @@ const characters = [
     },
     description: {
       spanish:
-        "donde pueden reconocerse el Teatro Nacional (después Palacio de Bellas Artes), la Plaza de Toros, el Banco de México y otros edificios de gran altura.",
+        "Donde pueden reconocerse el Teatro Nacional (después Palacio de Bellas Artes), la Plaza de Toros, el Banco de México y otros edificios de gran altura.",
       english:
-        "depicting severai monuments of Mexico City, as the National Theatre (Palacio de Bellas Artes), the Plaza de Toros, the Bank of Mexico and modern high buildings.",
+        "Showcasing notable landmarks like the National Theatre, Plaza de Toros, Bank of Mexico, and towering structures.",
     },
     x: 94.68,
     y: 0.4,
@@ -1313,9 +1318,9 @@ const characters = [
     },
     description: {
       spanish:
-        "jefe del movimiento que derrocó a Porfirio Díaz e iniciador de la Revolución Mexicana. Presidente de México de 1911 a 1913, asesinado durante la Decena Trágica por orden de Victoriano Huerta.",
+        "Jefe del movimiento que derrocó a Porfirio Díaz e iniciador de la Revolución Mexicana. Presidente de México de 1911 a 1913, asesinado durante la Decena Trágica por orden de Victoriano Huerta.",
       english:
-        "democrat, leader of Mexican Revolution that overthrew Diaz's dictatorship. President of Mexico from 1911 to 1913, when he was murdered.",
+        "Democrat and leader of Mexican Revolution that overthrew Diaz's dictatorship. President of Mexico from 1911 to 1913, when he was murdered.",
     },
     x: 90.63,
     y: 17.99,
@@ -1331,9 +1336,9 @@ const characters = [
     },
     description: {
       spanish:
-        "participante de la Revolución Mexicana, seguidor de Emiliano Zapata, (líder revolucionario promotor de la reforma agraria, que proclamó el Plan de Ayala en 1911).",
+        "Participante de la Revolución Mexicana, seguidor de Emiliano Zapata, (líder revolucionario promotor de la reforma agraria, que proclamó el Plan de Ayala en 1911).",
       english:
-        "follower ol Emiliano Zapata (peasant lander of the Nevican Rievoutom)",
+        "Follower of Emiliano Zapata, peasant leader of the Mexican Revolution.",
     },
     x: 78.39,
     y: 26.89,

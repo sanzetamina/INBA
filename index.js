@@ -1,5 +1,5 @@
 (() => {
-  let selectedLanguage = "english"; // Default to English
+  let selectedLanguage = "spanish"; // Default to Spanish
 
   const { renderer } = require("./src/renderer");
   const characters = require("./data/characters.js");
@@ -10,6 +10,13 @@
 
   let containerWidth = container.clientWidth;
   let containerHeight = container.clientHeight;
+
+  // Set initial header title based on selected language
+  const headerTitle = document.getElementById("header-title");
+  headerTitle.innerText =
+    selectedLanguage === "spanish"
+      ? "Sueño de una tarde dominical en la Alameda Central - Diego Rivera"
+      : "Dream of a Sunday Afternoon at Alameda Central Park - Diego Rivera";
 
   const instance = renderer({
     minScale: 0.1,
@@ -225,7 +232,14 @@
 
   languageSwitch.addEventListener("click", () => {
     languageCheckbox.checked = !languageCheckbox.checked;
-    selectedLanguage = languageCheckbox.checked ? "spanish" : "english";
+    selectedLanguage = languageCheckbox.checked ? "english" : "spanish";
+
+    // Update header title based on selected language
+    headerTitle.innerText =
+      selectedLanguage === "spanish"
+        ? "Sueño de una tarde dominical en la Alameda Central - Diego Rivera"
+        : "Dream of a Sunday Afternoon at Alameda Central Park - Diego Rivera";
+
     const characterId = currentlyOpenWindow.getAttribute("data-character-id");
     const character = characters.find(
       (char) => char.id === parseInt(characterId)

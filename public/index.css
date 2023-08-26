@@ -1,3 +1,18 @@
+/* Header */
+.header {
+  background-color: black;
+  color: grey;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Body */
 body {
   overflow: hidden;
   background-color: black;
@@ -145,4 +160,21 @@ body {
 
 .language-switch.spanish {
   background-image: url('https://www.kidlink.org/icons/f0-mx.gif');
+}
+
+/* Zoom Animation */
+.zoom-animation {
+  animation: zoomInOut 3s ease 1;
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1) translateX(0);
+  }
+  30%, 70% {
+    transform: scale(1.1) translateX(10px);
+  }
+  50% {
+    transform: scale(0.9) translateX(-10px);
+  }
 }
