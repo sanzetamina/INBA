@@ -39,14 +39,14 @@ body {
 }
 
 .character-face {
-  z-index: 2;
+  z-index: 10;
 }
 
 .highlight {
   position: absolute;
   outline: none;
   box-shadow: 0 0 0 2px white;
-  z-index: 1;
+  z-index: 20;
 }
 
 /* Floating Window */
@@ -165,7 +165,7 @@ body {
 }
 
 /* Zoom Animation */
-/* .zoom-animation {
+.zoom-animation {
   animation: zoomInOut 3s ease 1;
 }
 
@@ -179,4 +179,4 @@ body {
   50% {
     transform: scale(0.9) translateX(-10px);
   }
-} */
+}
