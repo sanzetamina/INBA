@@ -166,7 +166,7 @@ body {
 
 /* Zoom Animation */
 .zoom-animation {
-  animation: zoomInOut 3s ease 1;
+  animation: zoomInOut 2s ease 1;
 }
 
 @keyframes zoomInOut {

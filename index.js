@@ -1,4 +1,4 @@
-(() => {
+document.addEventListener("DOMContentLoaded", () => {
   let selectedLanguage = "spanish"; // Default to Spanish
 
   const { renderer } = require("./src/renderer");
@@ -40,11 +40,6 @@
 
     return { mouseX, mouseY };
   }
-
-  container.addEventListener("animationend", () => {
-    // Call the highlight boxes function right after the animation
-    positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
-  });
 
   function createHighlightElement(character) {
     let highlightElement = document.getElementById(
@@ -111,10 +106,10 @@
     positionHighlightBoxes(currentMousePosition);
   }
 
-  // Call positionHighlightBoxes initially
-  positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
-
   window.addEventListener("resize", handleResize);
+
+  // Call positionHighlightBoxes initially after all content is loaded
+  positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
 
   container.addEventListener("mousedown", (event) => {
     if (event.button !== 0) {
@@ -257,4 +252,11 @@
 
   // Call showFloatingWindow with a default character initially
   // showFloatingWindow(characters[0]);
-})();
+
+  container.addEventListener("animationend", () => {
+    // Add a delay using setTimeout before calling positionHighlightBoxes
+    setTimeout(() => {
+      positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
+    }, 200); // after 2s animation configured in the CSS
+  });
+});
