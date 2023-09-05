@@ -41,6 +41,11 @@
     return { mouseX, mouseY };
   }
 
+  container.addEventListener("animationend", () => {
+    // Call the highlight boxes function right after the animation
+    positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
+  });
+
   function createHighlightElement(character) {
     let highlightElement = document.getElementById(
       `highlight-${character.name.english}`
@@ -106,7 +111,7 @@
     positionHighlightBoxes(currentMousePosition);
   }
 
-  // Add this line to call positionHighlightBoxes initially
+  // Call positionHighlightBoxes initially
   positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
 
   window.addEventListener("resize", handleResize);
