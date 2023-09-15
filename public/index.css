@@ -39,14 +39,14 @@ body {
 }
 
 .character-face {
-  z-index: 10;
+  z-index: 2000;
 }
 
 .highlight {
   position: absolute;
   outline: none;
   box-shadow: 0 0 0 2px white;
-  z-index: 20;
+  z-index: 4000;
 }
 
 /* Floating Window */
