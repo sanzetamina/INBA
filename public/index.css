@@ -38,10 +38,6 @@ body {
   position: absolute;
 }
 
-.character-face {
-  z-index: 2000;
-}
-
 .highlight {
   position: absolute;
   outline: none;
