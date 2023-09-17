@@ -161,7 +161,7 @@ body {
 }
 
 /* Zoom Animation */
-.zoom-animation {
+/* .zoom-animation {
   animation: zoomInOut 2s ease 1;
 }
 
@@ -175,4 +175,4 @@ body {
   50% {
     transform: scale(0.9) translateX(-10px);
   }
-}
+} */

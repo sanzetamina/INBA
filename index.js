@@ -250,14 +250,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  container.addEventListener("animationend", () => {
-    // Add a delay using setTimeout before calling positionHighlightBoxes
-    setTimeout(() => {
-      positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
-    }, 200); // after 2s animation configured in the CSS
-    // Call showFloatingWindow with a default character initially
-    // showFloatingWindow(characters[37]);
-  });
-
+  // container.addEventListener("animationend", () => {
+  //   // Add a delay using setTimeout before calling positionHighlightBoxes
+  //   setTimeout(() => {
+  //     positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
+  //   }, 200); // after 2s animation configured in the CSS
+  //   // Call showFloatingWindow with a default character initially
+  //   // showFloatingWindow(characters[37]);
+  // });
+  positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
   handleResize();
 });
