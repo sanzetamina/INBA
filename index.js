@@ -77,15 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleMouseMove(event) {
     const { mouseX, mouseY } = calculateMousePosition(event);
-
-    // console.log(
-    //   "Mouse move at: x=",
-    //   mouseX.toFixed(2),
-    //   "% & y=",
-    //   mouseY.toFixed(2),
-    //   "%"
-    // );
-
     const currentMousePosition = { mouseX, mouseY };
     positionHighlightBoxes(currentMousePosition);
   }
@@ -158,14 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const { mouseX, mouseY } = calculateMousePosition(event);
     const scale = instance.getScale();
     const pan = instance.getPan();
-
-    // console.log(
-    //   "Mouse CLICK at: x=",
-    //   mouseX.toFixed(2),
-    //   "% & y=",
-    //   mouseY.toFixed(2),
-    //   "%"
-    // );
     console.log("Scale: ", scale);
     console.log("Pan: ", pan);
 

@@ -106,13 +106,16 @@ const renderer = ({ minScale, maxScale, element, scaleSensitivity = 10 }) => {
       scale: 1,
     },
   };
-  return Object.assign({}, makeZoom(state), makePan(state), {
+
+  return {
+    ...makeZoom(state),
+    ...makePan(state),
     getScale: () => state.transformation.scale,
     getPan: () => ({
       x: state.transformation.translateX,
       y: state.transformation.translateY,
-    }), // New function
-  });
+    }),
+  };
 };
 
 module.exports = { renderer };
