@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     scaleSensitivity: 50,
   });
 
+  // event listener for animation end
+  muralImage.addEventListener("animationend", () => {
+    // Call the highlight boxes function after the animation ends
+    positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
+  });
+
   let isDragging = false;
   let startX;
   let startY;
