@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("container");
   const languageSwitch = document.querySelector(".language-switch");
   const languageCheckbox = document.querySelector(".language-checkbox");
+  const muralImage = document.getElementById("mural"); // Get the mural image
 
   let containerWidth = container.clientWidth;
   let containerHeight = container.clientHeight;
