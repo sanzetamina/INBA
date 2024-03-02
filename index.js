@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // event listener for animation end
-  muralImage.addEventListener("animationend", () => {
+  container.addEventListener("animationend", () => {
     // Call the highlight boxes function after the animation ends
     positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
   });
@@ -237,15 +237,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (character) {
       showFloatingWindow(character);
     }
-  });
-
-  // Call showFloatingWindow with a default character initially
-  // showFloatingWindow(characters[0]);
-
-  container.addEventListener("animationend", () => {
-    // Add a delay using setTimeout before calling positionHighlightBoxes
-    setTimeout(() => {
-      positionHighlightBoxes({ mouseX: 0, mouseY: 0 });
-    }, 200); // after 2s animation configured in the CSS
   });
 });
